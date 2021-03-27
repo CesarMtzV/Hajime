@@ -1,4 +1,4 @@
-# HAJIME - Apliación para aprender japonés
+# HAJIME - Aplicación para aprender japonés
 
 Aplicación hecha en Swift para aprender los caracteres básicos del idioma Japonés, al igual que poder practicar el estudio de Kanji.
 
