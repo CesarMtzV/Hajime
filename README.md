@@ -4,8 +4,8 @@ Aplicación hecha en Swift para aprender los caracteres básicos del idioma Japo
 
 ## Funciones
 
-[] Practicar Hiragana
-[] Practicar Katakana
-[] Crear tus propias cartas de estudio
-[] Dibujar Kanji de manera manual
-[] Buscar significado de kanji
+- [ ] Practicar Hiragana
+- [ ]  Practicar Katakana
+- [ ] Crear tus propias cartas de estudio
+- [ ] Dibujar Kanji de manera manual
+- [ ] Buscar significado de kanji
