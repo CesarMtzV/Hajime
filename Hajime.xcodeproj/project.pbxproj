@@ -13,6 +13,8 @@
 		9D2EF312260FD5A300E2F97A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2EF310260FD5A300E2F97A /* Main.storyboard */; };
 		9D2EF314260FD5A400E2F97A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2EF313260FD5A400E2F97A /* Assets.xcassets */; };
 		9D2EF317260FD5A400E2F97A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2EF315260FD5A400E2F97A /* LaunchScreen.storyboard */; };
+		9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7433E0262939E70038124A /* HiraganaViewController.swift */; };
+		9D7433E4262939FF0038124A /* KatakanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7433E3262939FF0038124A /* KatakanaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9D2EF313260FD5A400E2F97A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D2EF316260FD5A400E2F97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2EF318260FD5A400E2F97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7433E0262939E70038124A /* HiraganaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaViewController.swift; sourceTree = "<group>"; };
+		9D7433E3262939FF0038124A /* KatakanaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				9D2EF30A260FD5A300E2F97A /* AppDelegate.swift */,
 				9D2EF30C260FD5A300E2F97A /* SceneDelegate.swift */,
 				9D2EF30E260FD5A300E2F97A /* ViewController.swift */,
+				9D7433E0262939E70038124A /* HiraganaViewController.swift */,
 				9D2EF310260FD5A300E2F97A /* Main.storyboard */,
+				9D7433E3262939FF0038124A /* KatakanaViewController.swift */,
 				9D2EF313260FD5A400E2F97A /* Assets.xcassets */,
 				9D2EF315260FD5A400E2F97A /* LaunchScreen.storyboard */,
 				9D2EF318260FD5A400E2F97A /* Info.plist */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */,
+				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
+				9D7433E4262939FF0038124A /* KatakanaViewController.swift in Sources */,
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,
 				9D2EF30D260FD5A300E2F97A /* SceneDelegate.swift in Sources */,
 			);
