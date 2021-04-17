@@ -239,6 +239,9 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="icons8-himeji-castle-25" id="cu1-AJ-VMP"/>
+                    <connections>
+                        <outlet property="btShowMore" destination="Two-4e-Jhi" id="mFi-Va-BDK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ou-ev-dyR" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,7 +250,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="xpg-h8-bON">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PGV-FX-OVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="J5w-kN-znP" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JLO-mr-yy1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -261,6 +263,7 @@
                         <segue destination="8Kh-KV-VNJ" kind="relationship" relationship="viewControllers" id="rGP-gs-8Nn"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGV-FX-OVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130" y="-645"/>
         </scene>
