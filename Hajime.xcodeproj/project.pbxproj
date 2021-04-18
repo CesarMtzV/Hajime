@@ -14,6 +14,7 @@
 		9D2EF314260FD5A400E2F97A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2EF313260FD5A400E2F97A /* Assets.xcassets */; };
 		9D2EF317260FD5A400E2F97A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2EF315260FD5A400E2F97A /* LaunchScreen.storyboard */; };
 		9D3D0F7B262B6D5300B63EA7 /* ShowMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */; };
+		9D699D9A262BB1240066B07E /* KanjiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D699D99262BB1240066B07E /* KanjiStruct.swift */; };
 		9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7433E0262939E70038124A /* HiraganaViewController.swift */; };
 		9D7433E4262939FF0038124A /* KatakanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7433E3262939FF0038124A /* KatakanaViewController.swift */; };
 		9D7433EE262B8BB50038124A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7433ED262B8BB50038124A /* Home.storyboard */; };
@@ -32,6 +33,7 @@
 		9D2EF316260FD5A400E2F97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2EF318260FD5A400E2F97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreViewController.swift; sourceTree = "<group>"; };
+		9D699D99262BB1240066B07E /* KanjiStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiStruct.swift; sourceTree = "<group>"; };
 		9D7433E0262939E70038124A /* HiraganaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaViewController.swift; sourceTree = "<group>"; };
 		9D7433E3262939FF0038124A /* KatakanaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaViewController.swift; sourceTree = "<group>"; };
 		9D7433ED262B8BB50038124A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				9D7433E0262939E70038124A /* HiraganaViewController.swift */,
 				9D2EF310260FD5A300E2F97A /* Main.storyboard */,
 				9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */,
+				9D699D99262BB1240066B07E /* KanjiStruct.swift */,
 				9D7433E3262939FF0038124A /* KatakanaViewController.swift */,
 				9D2EF313260FD5A400E2F97A /* Assets.xcassets */,
 				9D2EF315260FD5A400E2F97A /* LaunchScreen.storyboard */,
@@ -174,6 +177,7 @@
 				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
 				9D7433E4262939FF0038124A /* KatakanaViewController.swift in Sources */,
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,
+				9D699D9A262BB1240066B07E /* KanjiStruct.swift in Sources */,
 				9D3D0F7B262B6D5300B63EA7 /* ShowMoreViewController.swift in Sources */,
 				9D2EF30D260FD5A300E2F97A /* SceneDelegate.swift in Sources */,
 			);
