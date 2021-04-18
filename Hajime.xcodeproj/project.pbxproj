@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1E3DAC262CA7EF006D154B /* TableViewControllerLogros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */; };
+		9D1E3DAF262CAA96006D154B /* ViewControllerLogroMas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */; };
 		9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2EF30A260FD5A300E2F97A /* AppDelegate.swift */; };
 		9D2EF30D260FD5A300E2F97A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2EF30C260FD5A300E2F97A /* SceneDelegate.swift */; };
 		9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2EF30E260FD5A300E2F97A /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogros.swift; sourceTree = "<group>"; };
+		9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogroMas.swift; sourceTree = "<group>"; };
 		9D2EF307260FD5A300E2F97A /* Hajime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hajime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2EF30A260FD5A300E2F97A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2EF30C260FD5A300E2F97A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		9D2EF2FE260FD5A300E2F97A = {
 			isa = PBXGroup;
 			children = (
+				9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */,
+				9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */,
 				9D2EF309260FD5A300E2F97A /* Hajime */,
 				9D2EF308260FD5A300E2F97A /* Products */,
 			);
@@ -179,7 +185,9 @@
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,
 				9D699D9A262BB1240066B07E /* KanjiStruct.swift in Sources */,
 				9D3D0F7B262B6D5300B63EA7 /* ShowMoreViewController.swift in Sources */,
+				9D1E3DAF262CAA96006D154B /* ViewControllerLogroMas.swift in Sources */,
 				9D2EF30D260FD5A300E2F97A /* SceneDelegate.swift in Sources */,
+				9D1E3DAC262CA7EF006D154B /* TableViewControllerLogros.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
