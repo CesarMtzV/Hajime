@@ -8,35 +8,40 @@
 import UIKit
 
 class ShowMoreViewController: UIViewController {
-
+    @IBOutlet weak var lbKanji: UILabel!
+    
+    var KanjiData:kanjiData!
+    var validar : Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchKanjiData { (kanji) in
-            for kanjiData in kanji {
-                print(kanjiData.kanji)
-
-            }
+        if fetchKanjiData() {
+            lbKanji.text = KanjiData.kanji
+            
         }
 
-        
     }
-    
-    func fetchKanjiData(completionHandler: @escaping ([kanjiData]) -> Void){
-        let url = URL(string: "https://kanjiapi.dev/v1/kanji/%E6%97%A5")!
+      
+    func fetchKanjiData() -> Bool{
+        let url = URL(string: "https://kanjiapi.dev/v1/kanji/%E8%BB%8A")!
         
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            
-            guard let data=data else {return}
+        //let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+        let dataOrigen = try? Data.init(contentsOf: url)
+        
+            guard let data=dataOrigen else {
+                return false}
             
             do{
-                let KanjiData = try JSONDecoder().decode([kanjiData].self, from: data)
+                self.KanjiData = try JSONDecoder().decode(kanjiData.self, from: data)
+                validar = true
                 
-                completionHandler(KanjiData)
             }catch{ 
                 let error = error
                 print(error.localizedDescription)
+                validar = false
             }
-        }.resume()
+        
+        return validar
     }
             
     /*
