@@ -267,13 +267,13 @@
                                 <rect key="frame" x="252" y="130" width="43" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDK-CR-AWi">
                                 <rect key="frame" x="316" y="130" width="43" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvO-Hj-zac">
                                 <rect key="frame" x="303" y="137" width="5" height="21"/>
@@ -285,6 +285,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b5J-HA-Raq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qM1-PX-HaM" appends="YES" id="8ug-S2-WRY"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="75Q-gX-GMP"/>
                     <connections>
@@ -295,6 +299,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHj-xX-88r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qM1-PX-HaM">
+                    <connections>
+                        <action selector="removeKeyboard:" destination="1ae-aS-x7t" id="c2C-KM-Sh2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-794.39999999999998" y="-582.45877061469275"/>
         </scene>

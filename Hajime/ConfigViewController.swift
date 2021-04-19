@@ -15,8 +15,6 @@ class ConfigViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         updateConfigValues()
         // Do any additional setup after loading the view.
     }
@@ -53,6 +51,10 @@ class ConfigViewController: UIViewController {
         defaults.set(switchNotifications.isOn, forKey: "notifSwitch")
         defaults.setValue(textfieldHours.text, forKey: "tfHours")
         defaults.setValue(textfieldMinutes.text, forKey: "tfMinutes")
+    }
+    
+    @IBAction func removeKeyboard(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
 
