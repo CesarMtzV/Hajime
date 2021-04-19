@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 var notifOn: Bool = false
 var darkModeOn: Bool = false
@@ -17,6 +18,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound])
+        { granted, error in
+        }
+        
+        let content = UNMutableNotificationContent()
+        content.title = "¡Es hora de estudiar!"
+        content.body = "La práctica hace al maestro"
+        
+        var dateComponents = DateComponents()
+        dateComponents.hour = 11
+        dateComponents.minute = 9
+
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let uuidString = UUID().uuidString
+        
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        center.add(request)
+        { (error) in
+        }
+        
         getConfigValues()
         // Do any additional setup after loading the view.
     }
