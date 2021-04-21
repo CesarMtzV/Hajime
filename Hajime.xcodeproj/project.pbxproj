@@ -25,6 +25,8 @@
 		9D7433F1262B8D240038124A /* Hiragana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7433F0262B8D240038124A /* Hiragana.storyboard */; };
 		9D7433F4262B8D310038124A /* Katakana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7433F3262B8D310038124A /* Katakana.storyboard */; };
 		9D7433F7262B8D3B0038124A /* Kanji.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7433F6262B8D3B0038124A /* Kanji.storyboard */; };
+		9D8C06442630D1FD00941DF0 /* KatakanaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C06432630D1FD00941DF0 /* KatakanaCollectionViewCell.swift */; };
+		9D8C06472630D50900941DF0 /* Katakana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C06462630D50900941DF0 /* Katakana.swift */; };
 		9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		9D7433F0262B8D240038124A /* Hiragana.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hiragana.storyboard; sourceTree = "<group>"; };
 		9D7433F3262B8D310038124A /* Katakana.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Katakana.storyboard; sourceTree = "<group>"; };
 		9D7433F6262B8D3B0038124A /* Kanji.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Kanji.storyboard; sourceTree = "<group>"; };
+		9D8C06432630D1FD00941DF0 /* KatakanaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaCollectionViewCell.swift; sourceTree = "<group>"; };
+		9D8C06462630D50900941DF0 /* Katakana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Katakana.swift; sourceTree = "<group>"; };
 		9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +72,8 @@
 			children = (
 				9D2DC8E426308B9C00F716AA /* KatakanaViewController.swift */,
 				9D2DC8E02630892600F716AA /* KatakanaGridViewController.swift */,
+				9D8C06432630D1FD00941DF0 /* KatakanaCollectionViewCell.swift */,
+				9D8C06462630D50900941DF0 /* Katakana.swift */,
 			);
 			path = Katakana;
 			sourceTree = "<group>";
@@ -237,7 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2DC8E12630892600F716AA /* KatakanaGridViewController.swift in Sources */,
+				9D8C06472630D50900941DF0 /* Katakana.swift in Sources */,
 				9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */,
+				9D8C06442630D1FD00941DF0 /* KatakanaCollectionViewCell.swift in Sources */,
 				9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */,
 				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,
