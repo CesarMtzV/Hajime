@@ -24,6 +24,7 @@
 		9D7433F1262B8D240038124A /* Hiragana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7433F0262B8D240038124A /* Hiragana.storyboard */; };
 		9D7433F4262B8D310038124A /* Katakana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7433F3262B8D310038124A /* Katakana.storyboard */; };
 		9D7433F7262B8D3B0038124A /* Kanji.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7433F6262B8D3B0038124A /* Kanji.storyboard */; };
+		9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		9D7433F0262B8D240038124A /* Hiragana.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hiragana.storyboard; sourceTree = "<group>"; };
 		9D7433F3262B8D310038124A /* Katakana.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Katakana.storyboard; sourceTree = "<group>"; };
 		9D7433F6262B8D3B0038124A /* Kanji.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Kanji.storyboard; sourceTree = "<group>"; };
+		9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		9D2EF309260FD5A300E2F97A /* Hajime */ = {
 			isa = PBXGroup;
 			children = (
+				9DB91A5C262E310E00B574D8 /* ViewControllers */,
 				9D7433EC262B8B8E0038124A /* Storyboards */,
 				9D2EF30A260FD5A300E2F97A /* AppDelegate.swift */,
 				9D2EF30C260FD5A300E2F97A /* SceneDelegate.swift */,
@@ -86,7 +89,6 @@
 				9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */,
 				9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */,
 				9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */,
-				9D7433E0262939E70038124A /* HiraganaViewController.swift */,
 				9D2EF310260FD5A300E2F97A /* Main.storyboard */,
 				9D699D99262BB1240066B07E /* KanjiStruct.swift */,
 				9D7433E3262939FF0038124A /* KatakanaViewController.swift */,
@@ -106,6 +108,23 @@
 				9D7433F6262B8D3B0038124A /* Kanji.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9DB91A5C262E310E00B574D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DB91A5D262E312200B574D8 /* Hiragana */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9DB91A5D262E312200B574D8 /* Hiragana */ = {
+			isa = PBXGroup;
+			children = (
+				9D7433E0262939E70038124A /* HiraganaViewController.swift */,
+				9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */,
+			);
+			path = Hiragana;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */,
 				9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */,
 				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
 				9D7433E4262939FF0038124A /* KatakanaViewController.swift in Sources */,

@@ -16,17 +16,25 @@ class HiraganaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configurarBotones()
+        configurarNavbar()
     }
     
     func configurarBotones(){
-        print(btnEstudiar.bounds.size.width)
         btnEstudiar.layer.cornerRadius = 0.5 * btnEstudiar.bounds.size.width
         btnEstudiar.clipsToBounds = true
         
         btnPracticar.layer.cornerRadius = 0.5 * btnPracticar.bounds.size.width
         btnPracticar.clipsToBounds = true
+    }
+    
+    func configurarNavbar(){
+        
+        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .done, target: self, action: nil)
+        
+        title = "Hiragana"
+        navigationItem.setRightBarButton(settingsButton, animated: true)
     }
     
 
