@@ -61,6 +61,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D2DC8DB263085E600F716AA /* Katakana */ = {
+			isa = PBXGroup;
+			children = (
+				9D7433E3262939FF0038124A /* KatakanaViewController.swift */,
+			);
+			path = Katakana;
+			sourceTree = "<group>";
+		};
+		9D2DC8DC263085EE00F716AA /* Kanji */ = {
+			isa = PBXGroup;
+			children = (
+				9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */,
+			);
+			path = Kanji;
+			sourceTree = "<group>";
+		};
+		9D2DC8DD263085F500F716AA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9D2DC8DE2630862B00F716AA /* Logros */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */,
+				9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */,
+			);
+			path = Logros;
+			sourceTree = "<group>";
+		};
 		9D2EF2FE260FD5A300E2F97A = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +118,7 @@
 				9D2EF30C260FD5A300E2F97A /* SceneDelegate.swift */,
 				9D2EF30E260FD5A300E2F97A /* ViewController.swift */,
 				93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */,
-				9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */,
-				9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */,
-				9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */,
-				9D2EF310260FD5A300E2F97A /* Main.storyboard */,
 				9D699D99262BB1240066B07E /* KanjiStruct.swift */,
-				9D7433E3262939FF0038124A /* KatakanaViewController.swift */,
 				9D2EF313260FD5A400E2F97A /* Assets.xcassets */,
 				9D2EF315260FD5A400E2F97A /* LaunchScreen.storyboard */,
 				9D2EF318260FD5A400E2F97A /* Info.plist */,
@@ -106,6 +133,7 @@
 				9D7433F0262B8D240038124A /* Hiragana.storyboard */,
 				9D7433F3262B8D310038124A /* Katakana.storyboard */,
 				9D7433F6262B8D3B0038124A /* Kanji.storyboard */,
+				9D2EF310260FD5A300E2F97A /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -113,6 +141,10 @@
 		9DB91A5C262E310E00B574D8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9D2DC8DE2630862B00F716AA /* Logros */,
+				9D2DC8DD263085F500F716AA /* Home */,
+				9D2DC8DC263085EE00F716AA /* Kanji */,
+				9D2DC8DB263085E600F716AA /* Katakana */,
 				9DB91A5D262E312200B574D8 /* Hiragana */,
 			);
 			path = ViewControllers;
