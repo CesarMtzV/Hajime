@@ -9,6 +9,10 @@ import UIKit
 
 class ShowMoreViewController: UIViewController {
     @IBOutlet weak var lbKanji: UILabel!
+    @IBOutlet weak var lbTrazos: UILabel!
+    @IBOutlet weak var lbKun: UILabel!
+    @IBOutlet weak var lnOn: UILabel!
+    @IBOutlet weak var lbSig: UILabel!
     
     var KanjiData:kanjiData!
     var validar : Bool = true
@@ -17,6 +21,10 @@ class ShowMoreViewController: UIViewController {
         super.viewDidLoad()
         if fetchKanjiData() {
             lbKanji.text = KanjiData.kanji
+            lbTrazos.text = String(KanjiData.stroke_count)
+            lbKun.text = KanjiData.kun_readings[0]
+            lnOn.text = KanjiData.on_readings[0]
+            lbSig.text = KanjiData.meanings[0]
             
         }
 
