@@ -34,7 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Hajime/ConfigViewController.swift; sourceTree = SOURCE_ROOT; };
+		93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Hajime/ViewControllers/Settings/ConfigViewController.swift; sourceTree = SOURCE_ROOT; };
 		9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogros.swift; sourceTree = "<group>"; };
 		9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogroMas.swift; sourceTree = "<group>"; };
 		9D2DC8E02630892600F716AA /* KatakanaGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaGridViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 		9D2DC8DD263085F500F716AA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9D2EF30E260FD5A300E2F97A /* ViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -132,14 +133,20 @@
 				9D7433EC262B8B8E0038124A /* Storyboards */,
 				9D2EF30A260FD5A300E2F97A /* AppDelegate.swift */,
 				9D2EF30C260FD5A300E2F97A /* SceneDelegate.swift */,
-				9D2EF30E260FD5A300E2F97A /* ViewController.swift */,
-				93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */,
 				9D699D99262BB1240066B07E /* KanjiStruct.swift */,
 				9D2EF313260FD5A400E2F97A /* Assets.xcassets */,
 				9D2EF315260FD5A400E2F97A /* LaunchScreen.storyboard */,
 				9D2EF318260FD5A400E2F97A /* Info.plist */,
 			);
 			path = Hajime;
+			sourceTree = "<group>";
+		};
+		9D424BDF26347E9A00141E85 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		9D7433EC262B8B8E0038124A /* Storyboards */ = {
@@ -157,6 +164,7 @@
 		9DB91A5C262E310E00B574D8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9D424BDF26347E9A00141E85 /* Settings */,
 				9D2DC8DE2630862B00F716AA /* Logros */,
 				9D2DC8DD263085F500F716AA /* Home */,
 				9D2DC8DC263085EE00F716AA /* Kanji */,
