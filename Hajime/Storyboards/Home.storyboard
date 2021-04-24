@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Afl-Nv-AjS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uWD-bl-zLQ">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="z9e-Ba-NdI">
             <objects>
                 <viewController id="Afl-Nv-AjS" customClass="ViewController" customModule="Hajime" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,28 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-BD-pJk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hajime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2P-v0-yiF">
-                                        <rect key="frame" x="21" y="33" width="59" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQE-Ov-YM9">
-                                        <rect key="frame" x="340" y="34" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="settings-1"/>
-                                        <connections>
-                                            <segue destination="1ae-aS-x7t" kind="presentation" id="qsG-9s-ZgP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54W-bE-pRS">
                                 <rect key="frame" x="16" y="103" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,7 +35,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="WTq-4O-wtQ" kind="presentation" modalPresentationStyle="fullScreen" id="eRq-Xy-HBC"/>
+                                            <segue destination="TKQ-Hi-pbG" kind="show" id="fxq-vx-rfG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⭐️  Crear tu primer conjunto de cartas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvq-7B-JZe">
@@ -113,7 +91,14 @@
                         <viewLayoutGuide key="safeArea" id="IGq-p9-dR4"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="icons8-himeji-castle-25" id="osY-tM-QQy"/>
+                    <navigationItem key="navigationItem" id="vNA-8N-2CK">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="LaU-HD-L80">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="1ae-aS-x7t" kind="show" id="ITa-dp-jNR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btShowMore" destination="Uuq-V9-mfH" id="Qvc-8g-wMm"/>
@@ -121,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AW-A0-vbz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-959.20000000000005" y="126.38680659670166"/>
+            <point key="canvasLocation" x="-1327" y="126"/>
         </scene>
         <!--Table View Controller Logros-->
         <scene sceneID="rfR-7M-EP5">
@@ -169,7 +154,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKO-rf-j11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="516"/>
+            <point key="canvasLocation" x="-321" y="125"/>
         </scene>
         <!--View Controller Logro Mas-->
         <scene sceneID="jeR-aY-aQu">
@@ -185,14 +170,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ9-mR-bQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="516"/>
+            <point key="canvasLocation" x="498" y="125"/>
         </scene>
         <!--Config View Controller-->
         <scene sceneID="OWg-3P-Za7">
             <objects>
                 <viewController id="1ae-aS-x7t" customClass="ConfigViewController" customModule="Hajime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ou3-bH-NZc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-7y-ZsN">
@@ -305,7 +290,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-794.39999999999998" y="-582.45877061469275"/>
+            <point key="canvasLocation" x="-322" y="-658"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MJm-Xd-sIi">
@@ -320,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ju6-ii-x1W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118" y="-896"/>
+            <point key="canvasLocation" x="553" y="-658"/>
         </scene>
         <!--Show More View Controller-->
         <scene sceneID="3WE-Sp-bcf">
@@ -414,33 +399,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yai-IG-cbw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95.200000000000003" y="-203.74812593703149"/>
+            <point key="canvasLocation" x="-1327" y="943"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="g3t-Q1-h9z">
+        <!--Home-->
+        <scene sceneID="0QK-fZ-8lZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WTq-4O-wtQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uWD-bl-zLQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="icons8-himeji-castle-25" id="osY-tM-QQy"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1gK-uh-0ny">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="NI8-XP-aVu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemGray3Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="TKQ-Hi-pbG" kind="relationship" relationship="rootViewController" id="eek-Ym-o92"/>
+                        <segue destination="Afl-Nv-AjS" kind="relationship" relationship="rootViewController" id="kUe-Cm-jfm"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bNS-S6-kS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybf-BJ-mGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95.200000000000003" y="515.8920539730135"/>
+            <point key="canvasLocation" x="-2158" y="126"/>
         </scene>
     </scenes>
     <resources>
         <image name="icons8-himeji-castle-25" width="25" height="25"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="settings-1" width="50" height="50"/>
+        <image name="settings-30" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

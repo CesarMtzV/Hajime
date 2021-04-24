@@ -19,6 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" systemColor="systemGray3Color"/>
                     </navigationBar>
                     <connections>
                         <segue destination="3cY-IC-8Th" kind="relationship" relationship="rootViewController" id="bDy-a4-cE5"/>
@@ -63,11 +64,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fyx-od-kVA">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="eSh-hm-kHy">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cfp-dC-3Tv">
-                                <rect key="frame" x="329" y="5" width="30" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="dIK-0Y-mh6">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -153,11 +151,15 @@
         <image name="icons8-book-48" width="48" height="48"/>
         <image name="icons8-hiragana-hi-25" width="25" height="25"/>
         <image name="icons8-play-96" width="96" height="96"/>
+        <image name="settings-30" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

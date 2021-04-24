@@ -39,9 +39,9 @@ class ConfigViewController: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         saveConfigValues()
-        let tabVC = self.presentingViewController as! UITabBarController
-        let initialView = tabVC.selectedViewController as! ViewController
-        initialView.getConfigValues()
+//        let tabVC = self.presentingViewController as! UITabBarController
+//        let initialView = tabVC.selectedViewController as! ViewController
+//        initialView.getConfigValues()
     }
     
     @IBAction func saveConfigValues() {

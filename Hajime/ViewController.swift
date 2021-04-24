@@ -43,7 +43,12 @@ class ViewController: UIViewController {
         }
         
         getConfigValues()
-        // Do any additional setup after loading the view.
+        
+        configurarNavbar()
+    }
+    
+    func configurarNavbar(){
+        title = "Hajime"
     }
 
     func getConfigValues() {
@@ -53,5 +58,6 @@ class ViewController: UIViewController {
         reminderHour = defaults.integer(forKey: "tfHours")
         reminderMin = defaults.integer(forKey: "tfMinutes")
     }
+    
 }
 

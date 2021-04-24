@@ -31,10 +31,10 @@ class HiraganaViewController: UIViewController {
     
     func configurarNavbar(){
         
-        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .done, target: self, action: nil)
+        //let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .done, target: self, action: nil)
         
         title = "Hiragana"
-        navigationItem.setRightBarButton(settingsButton, animated: true)
+        //navigationItem.setRightBarButton(settingsButton, animated: true)
     }
     
 
