@@ -61,7 +61,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tOR-GF-Iu5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fyx-od-kVA">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="dIK-0Y-mh6">
@@ -89,7 +89,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hKY-ve-d7f">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oyc-hC-vOf">
                                     <size key="itemSize" width="118" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
