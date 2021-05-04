@@ -8,9 +8,18 @@
 import UIKit
 
 class ViewControllerLogroMas: UIViewController {
+    
+    @IBOutlet weak var lbLogro: UILabel!
+    @IBOutlet weak var lbDesc: UILabel!
+    
+    var LogrosMas : Logros!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lbLogro.text = LogrosMas.nombre
+        
+        lbDesc.text = LogrosMas.detalle
 
         // Do any additional setup after loading the view.
     }

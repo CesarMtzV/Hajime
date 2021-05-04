@@ -9,7 +9,16 @@ import UIKit
 
 class TableViewControllerLogros: UITableViewController {
     
-    var lista = ["logro1", "logro2", "logro3"]
+    var ArrLogros = [
+        Logros(nombre: "Logro 1", detalle: "1. Viste tu primer Kanji del día"),
+        Logros(nombre: "Logro 2", detalle: "2. Practicaste Hiragana por primera vez"),
+        Logros(nombre: "Logro 3", detalle: "3. Practicaste Katakana por primera vez"),
+        Logros(nombre: "Logro 4", detalle: "4. Activaste las notificaciones "),
+        Logros(nombre: "Logro 5", detalle: "5. Rompiste tu record estudiando Hiragana"),
+        Logros(nombre: "Logro 6", detalle: "6. Rompiste tu record estudiando Katakana"),
+        Logros(nombre: "Logro 7", detalle: "7. Creaste tu primer deck de Kanji"),
+        Logros(nombre: "Logro 8", detalle: "8. Dibujaste tu primer Kanji"),
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +37,7 @@ class TableViewControllerLogros: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return lista.count
+        return ArrLogros.count
     }
 
     
@@ -36,10 +45,9 @@ class TableViewControllerLogros: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
 
         // Configure the cell...
-        
-        cell.textLabel?.text = lista[indexPath.row]
-
+        cell.textLabel?.text = ArrLogros[indexPath.row].nombre
         return cell
+        
     }
     
 
@@ -78,14 +86,17 @@ class TableViewControllerLogros: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let vistaLogrosMas = segue.destination as! ViewControllerLogroMas
+        
+        let indice = tableView.indexPathForSelectedRow!
+        
+        vistaLogrosMas.LogrosMas = ArrLogros[indice.row]
     }
-    */
+    
 
 }

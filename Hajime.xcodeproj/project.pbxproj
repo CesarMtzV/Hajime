@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		93E6D1EC262DF88A003CC75D /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */; };
+		9D0B76652641FBF0006A43BC /* Logros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B76642641FBF0006A43BC /* Logros.swift */; };
 		9D1E3DAC262CA7EF006D154B /* TableViewControllerLogros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */; };
 		9D1E3DAF262CAA96006D154B /* ViewControllerLogroMas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */; };
 		9D2DC8E12630892600F716AA /* KatakanaGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DC8E02630892600F716AA /* KatakanaGridViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Hajime/ViewControllers/Settings/ConfigViewController.swift; sourceTree = SOURCE_ROOT; };
+		9D0B76642641FBF0006A43BC /* Logros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logros.swift; sourceTree = "<group>"; };
 		9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogros.swift; sourceTree = "<group>"; };
 		9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogroMas.swift; sourceTree = "<group>"; };
 		9D2DC8E02630892600F716AA /* KatakanaGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaGridViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */,
+				9D0B76642641FBF0006A43BC /* Logros.swift */,
 				9D1E3DAE262CAA96006D154B /* ViewControllerLogroMas.swift */,
 			);
 			path = Logros;
@@ -264,6 +267,7 @@
 				9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */,
 				9D8C06442630D1FD00941DF0 /* KatakanaCollectionViewCell.swift in Sources */,
 				9D424BDD26347DD700141E85 /* KanjiViewController.swift in Sources */,
+				9D0B76652641FBF0006A43BC /* Logros.swift in Sources */,
 				9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */,
 				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,

@@ -31,6 +31,13 @@ class ShowMoreViewController: UIViewController {
     }
       
     func fetchKanjiData() -> Bool{
+        
+        let kanji: Data? = "⾞".data(using: .utf8) // non-nil
+        
+        let kanji2 = String(decoding: kanji!, as: UTF8.self)
+        
+        print(kanji!)
+        
         let url = URL(string: "https://kanjiapi.dev/v1/kanji/%E8%BB%8A")!
         
         //let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
