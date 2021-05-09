@@ -10,14 +10,14 @@ import UIKit
 class TableViewControllerLogros: UITableViewController {
     
     var ArrLogros = [
-        Logros(nombre: "Logro 1", detalle: "1. Viste tu primer Kanji del día"),
-        Logros(nombre: "Logro 2", detalle: "2. Practicaste Hiragana por primera vez"),
-        Logros(nombre: "Logro 3", detalle: "3. Practicaste Katakana por primera vez"),
-        Logros(nombre: "Logro 4", detalle: "4. Activaste las notificaciones "),
-        Logros(nombre: "Logro 5", detalle: "5. Rompiste tu record estudiando Hiragana"),
-        Logros(nombre: "Logro 6", detalle: "6. Rompiste tu record estudiando Katakana"),
-        Logros(nombre: "Logro 7", detalle: "7. Creaste tu primer deck de Kanji"),
-        Logros(nombre: "Logro 8", detalle: "8. Dibujaste tu primer Kanji"),
+        Logros(nombre: "Random", detalle: "Generaste tu primer kanji aleatorio"),
+        Logros(nombre: "ひらがな", detalle: "Practicaste Hiragana por primera vez"),
+        Logros(nombre: "カタカナ", detalle: "Practicaste Katakana por primera vez"),
+        Logros(nombre: "Nuevas alertas", detalle: "Activaste las notificaciones "),
+        Logros(nombre: "Nuevo record! (hiragana)", detalle: "Rompiste tu record estudiando Hiragana"),
+        Logros(nombre: "感じ", detalle: "Creaste tu primer deck de Kanji"),
+        Logros(nombre: "Artista", detalle: "Dibujaste tu primer Kanji"),
+        Logros(nombre: "Nuevo record! (katakana)", detalle: "Rompiste tu record estudiando Katakana"),
     ]
 
     override func viewDidLoad() {
@@ -32,6 +32,10 @@ class TableViewControllerLogros: UITableViewController {
         title = "Logros"
     }
 
+    @IBAction func btDone(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: - Table view data source
 
 
