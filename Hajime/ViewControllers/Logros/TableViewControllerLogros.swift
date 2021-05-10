@@ -30,12 +30,7 @@ class TableViewControllerLogros: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         title = "Logros"
-    }
-
-    @IBAction func btDone(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-    }
-    
+    }    
     // MARK: - Table view data source
 
 
