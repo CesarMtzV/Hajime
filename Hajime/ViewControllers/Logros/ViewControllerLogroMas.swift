@@ -11,6 +11,7 @@ class ViewControllerLogroMas: UIViewController {
     
     @IBOutlet weak var lbLogro: UILabel!
     @IBOutlet weak var lbDesc: UILabel!
+    @IBOutlet weak var img: UIImageView!
     
     var LogrosMas : Logros!
 
@@ -20,6 +21,8 @@ class ViewControllerLogroMas: UIViewController {
         lbLogro.text = LogrosMas.nombre
         
         lbDesc.text = LogrosMas.detalle
+        
+        img.image = LogrosMas.img
 
         // Do any additional setup after loading the view.
     }

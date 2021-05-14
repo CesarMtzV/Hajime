@@ -10,14 +10,14 @@ import UIKit
 class TableViewControllerLogros: UITableViewController {
     
     var ArrLogros = [
-        Logros(nombre: "Random", detalle: "Generaste tu primer kanji aleatorio"),
-        Logros(nombre: "ひらがな", detalle: "Practicaste Hiragana por primera vez"),
-        Logros(nombre: "カタカナ", detalle: "Practicaste Katakana por primera vez"),
-        Logros(nombre: "Nuevas alertas", detalle: "Activaste las notificaciones "),
-        Logros(nombre: "Nuevo record! (hiragana)", detalle: "Rompiste tu record estudiando Hiragana"),
-        Logros(nombre: "感じ", detalle: "Creaste tu primer deck de Kanji"),
-        Logros(nombre: "Artista", detalle: "Dibujaste tu primer Kanji"),
-        Logros(nombre: "Nuevo record! (katakana)", detalle: "Rompiste tu record estudiando Katakana"),
+        Logros(nombre: "Random", detalle: "Generaste tu primer kanji aleatorio", img: UIImage(imageLiteralResourceName: "dice.png")),
+        Logros(nombre: "ひらがな", detalle: "Practicaste Hiragana por primera vez", img: UIImage(imageLiteralResourceName: "a.png")),
+        Logros(nombre: "カタカナ", detalle: "Practicaste Katakana por primera vez", img: UIImage(imageLiteralResourceName: "ka.png")),
+        Logros(nombre: "Nuevas alertas", detalle: "Activaste las notificaciones ", img: UIImage(imageLiteralResourceName: "noti.jpeg")),
+        Logros(nombre: "Nuevo record! (hiragana)", detalle: "Rompiste tu record estudiando Hiragana", img: UIImage(imageLiteralResourceName: "hiragan.png")),
+        Logros(nombre: "感じ", detalle: "Creaste tu primer deck de Kanji", img: UIImage(imageLiteralResourceName: "kanji-1.jpeg")),
+        Logros(nombre: "Artista", detalle: "Dibujaste tu primer Kanji", img: UIImage(imageLiteralResourceName: "art.png")),
+        Logros(nombre: "Nuevo record! (katakana)", detalle: "Rompiste tu record estudiando Katakana", img: UIImage(imageLiteralResourceName: "katakana-1.png")),
     ]
 
     override func viewDidLoad() {
