@@ -7,7 +7,7 @@
 
 import UIKit
 
-class KanjiUsuario: Codable {
+class KanjiUsuario: NSObject, Codable {
     
     var caracter: String
     var pronunciacion: String
