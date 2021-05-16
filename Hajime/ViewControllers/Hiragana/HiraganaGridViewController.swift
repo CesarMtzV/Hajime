@@ -33,10 +33,13 @@ extension HiraganaGridViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HiraganaCollectionViewCell", for: indexPath) as! HiraganaCollectionViewCell
-        
+        cell.layer.cornerRadius = 8
         cell.setup(with: hiragana[indexPath.row])
-        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 25, left: 15, bottom: 0, right: 15)
     }
 }
 

@@ -14,7 +14,6 @@ class KatakanaGridViewController: UIViewController, UICollectionViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         title = "Referencias"
         
         collectionView.dataSource = self
@@ -35,10 +34,14 @@ extension KatakanaGridViewController: UICollectionViewDataSource {
     //Definir la celda
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KatakanaCollectionViewCell", for: indexPath) as! KatakanaCollectionViewCell
-        
+        cell.layer.cornerRadius = 8
         //Funcion para llenar los valores de la celda. Esta declaradda en KatakanaCollectionViewCell
         cell.setup(with: katakana[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 25, left: 15, bottom: 0, right: 15)
     }
     
 }
