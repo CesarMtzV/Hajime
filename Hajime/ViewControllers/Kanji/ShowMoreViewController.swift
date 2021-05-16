@@ -8,11 +8,20 @@
 import UIKit
 
 class ShowMoreViewController: UIViewController {
+    
     @IBOutlet weak var lbKanji: UILabel!
     @IBOutlet weak var lbTrazos: UILabel!
+    
     @IBOutlet weak var lbKun: UILabel!
+    @IBOutlet weak var lbKun2: UILabel!
+    @IBOutlet weak var lbKun3: UILabel!
     @IBOutlet weak var lnOn: UILabel!
+    @IBOutlet weak var lbOn2: UILabel!
+    @IBOutlet weak var lbOn3: UILabel!
     @IBOutlet weak var lbSig: UILabel!
+    @IBOutlet weak var lbSig2: UILabel!
+    @IBOutlet weak var lbSig3: UILabel!
+    
     
     var KanjiData:kanjiData!
     var validar : Bool = true
@@ -25,30 +34,89 @@ class ShowMoreViewController: UIViewController {
             lbKanji.text = KanjiData.kanji
             lbTrazos.text = String(KanjiData.stroke_count)
             if KanjiData.kun_readings.isEmpty {
-                lbKun.text = "No hay lectura Kun"
+                lbKun.text = "Kun N/A"
             }else{
                 lbKun.text = KanjiData.kun_readings[0]
+                if (KanjiData.kun_readings.count > 1){
+                    lbKun2.text = KanjiData.kun_readings[1]
+                    if (KanjiData.kun_readings.count > 2){
+                        lbKun3.text = KanjiData.kun_readings[2]
+                    }
+                }
             }
-            lnOn.text = KanjiData.on_readings[0]
+            if KanjiData.on_readings.isEmpty {
+                lnOn.text = "On N/A"
+            }else{
+                lnOn.text = KanjiData.on_readings[0]
+                if (KanjiData.on_readings.count > 1){
+                    lbOn2.text = KanjiData.on_readings[1]
+                    if (KanjiData.on_readings.count > 2){
+                        lbOn3.text = KanjiData.on_readings[2]
+                    }
+                }
+            }
             lbSig.text = KanjiData.meanings[0]
-            
+            if (KanjiData.meanings.count > 1){
+                lbSig2.text = KanjiData.meanings[1]
+                if (KanjiData.meanings.count > 2){
+                    lbSig3.text = KanjiData.meanings[2]
+                }
+            }
         }
-
     }
       
     @IBAction func btGenerar(_ sender: UIButton) {
         randomIndex = Int.random(in: 0..<KanjiList.count)
+        
+        KanjiData.kun_readings.removeAll()
+        KanjiData.on_readings.removeAll()
+        KanjiData.meanings.removeAll()
+        
         if fetchKanjiData() {
             lbKanji.text = KanjiData.kanji
             lbTrazos.text = String(KanjiData.stroke_count)
             if KanjiData.kun_readings.isEmpty {
-                lbKun.text = "No hay lectura Kun"
+                lbKun.text = "Kun N/A"
+                lbKun2.text = nil
+                lbKun3.text = nil
             }else{
                 lbKun.text = KanjiData.kun_readings[0]
+                lbKun2.text = nil
+                lbKun3.text = nil
+                if (KanjiData.kun_readings.count > 1){
+                    lbKun2.text = KanjiData.kun_readings[1]
+                    lbKun3.text = nil
+                    if (KanjiData.kun_readings.count > 2){
+                        lbKun3.text = KanjiData.kun_readings[2]
+                    }
+                }
             }
-            lnOn.text = KanjiData.on_readings[0]
+            if KanjiData.on_readings.isEmpty {
+                lnOn.text = "On N/A"
+                lbOn2.text = nil
+                lbOn3.text = nil
+            }else{
+                lnOn.text = KanjiData.on_readings[0]
+                lbOn2.text = nil
+                lbOn3.text = nil
+                if (KanjiData.on_readings.count > 1){
+                    lbOn2.text = KanjiData.on_readings[1]
+                    lbOn3.text = nil
+                    if (KanjiData.on_readings.count > 2){
+                        lbOn3.text = KanjiData.on_readings[2]
+                    }
+                }
+            }
             lbSig.text = KanjiData.meanings[0]
-            
+            lbSig2.text = nil
+            lbSig3.text = nil
+            if (KanjiData.meanings.count > 1){
+                lbSig2.text = KanjiData.meanings[1]
+                lbSig3.text = nil
+                if (KanjiData.meanings.count > 2){
+                    lbSig3.text = KanjiData.meanings[2]
+                }
+            }
         }
     }
     

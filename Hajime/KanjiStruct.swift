@@ -9,25 +9,25 @@ import Foundation
 
 struct kanjiData: Codable {
 
-    let kanji:String
+    var kanji:String
 
-    let grade:Int
+    var grade:Int
 
-    let stroke_count:Int
+    var stroke_count:Int
 
-    let meanings:[String]
+    var meanings:[String]
 
-    let kun_readings:[String]
+    var kun_readings:[String]
 
-    let on_readings:[String]
+    var on_readings:[String]
 
-    let name_readings:[String]
+    var name_readings:[String]
 
-    let jlpt:Int
+    var jlpt:Int
 
-    let unicode:String
+    var unicode:String
 
-    let heisig_en:String
+    var heisig_en:String
 
 }
 
