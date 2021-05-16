@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F45FD252650DCF20092E11F /* HiraganaQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45FD242650DCF20092E11F /* HiraganaQuizViewController.swift */; };
+		8F45FD282650EFCB0092E11F /* KatakanaQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45FD272650EFCB0092E11F /* KatakanaQuizViewController.swift */; };
 		93E6D1EC262DF88A003CC75D /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */; };
 		9D0B76652641FBF0006A43BC /* Logros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B76642641FBF0006A43BC /* Logros.swift */; };
 		9D1E3DAC262CA7EF006D154B /* TableViewControllerLogros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F45FD242650DCF20092E11F /* HiraganaQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaQuizViewController.swift; sourceTree = "<group>"; };
+		8F45FD272650EFCB0092E11F /* KatakanaQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaQuizViewController.swift; sourceTree = "<group>"; };
 		93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Hajime/ViewControllers/Settings/ConfigViewController.swift; sourceTree = SOURCE_ROOT; };
 		9D0B76642641FBF0006A43BC /* Logros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logros.swift; sourceTree = "<group>"; };
 		9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogros.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 				9D2DC8E02630892600F716AA /* KatakanaGridViewController.swift */,
 				9D8C06432630D1FD00941DF0 /* KatakanaCollectionViewCell.swift */,
 				9D8C06462630D50900941DF0 /* Katakana.swift */,
+				8F45FD272650EFCB0092E11F /* KatakanaQuizViewController.swift */,
 			);
 			path = Katakana;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */,
 				9D8C06492631322600941DF0 /* Hiragana.swift */,
 				9D8C064C2631344500941DF0 /* HiraganaCollectionViewCell.swift */,
+				8F45FD242650DCF20092E11F /* HiraganaQuizViewController.swift */,
 			);
 			path = Hiragana;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				9D0B76652641FBF0006A43BC /* Logros.swift in Sources */,
 				9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */,
 				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
+				8F45FD252650DCF20092E11F /* HiraganaQuizViewController.swift in Sources */,
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,
 				9D699D9A262BB1240066B07E /* KanjiStruct.swift in Sources */,
 				9D4FBA83264F2F90001E0BEC /* KanjiUsuario.swift in Sources */,
@@ -296,6 +303,7 @@
 				93E6D1EC262DF88A003CC75D /* ConfigViewController.swift in Sources */,
 				9D2DC8E526308B9C00F716AA /* KatakanaViewController.swift in Sources */,
 				9D1E3DAC262CA7EF006D154B /* TableViewControllerLogros.swift in Sources */,
+				8F45FD282650EFCB0092E11F /* KatakanaQuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
