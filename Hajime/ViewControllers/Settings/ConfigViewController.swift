@@ -15,6 +15,7 @@ class ConfigViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Ajustes"
         updateConfigValues()
         // Do any additional setup after loading the view.
     }

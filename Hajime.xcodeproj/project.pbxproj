@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F45FD252650DCF20092E11F /* HiraganaQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45FD242650DCF20092E11F /* HiraganaQuizViewController.swift */; };
 		8F45FD282650EFCB0092E11F /* KatakanaQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45FD272650EFCB0092E11F /* KatakanaQuizViewController.swift */; };
+		93B550562651AEE000CAFB5D /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B550552651AEE000CAFB5D /* Config.storyboard */; };
 		93E6D1EC262DF88A003CC75D /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */; };
 		9D0B76652641FBF0006A43BC /* Logros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B76642641FBF0006A43BC /* Logros.swift */; };
 		9D1E3DAC262CA7EF006D154B /* TableViewControllerLogros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		8F45FD242650DCF20092E11F /* HiraganaQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaQuizViewController.swift; sourceTree = "<group>"; };
 		8F45FD272650EFCB0092E11F /* KatakanaQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaQuizViewController.swift; sourceTree = "<group>"; };
+		93B550552651AEE000CAFB5D /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Hajime/ViewControllers/Settings/ConfigViewController.swift; sourceTree = SOURCE_ROOT; };
 		9D0B76642641FBF0006A43BC /* Logros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logros.swift; sourceTree = "<group>"; };
 		9D1E3DAB262CA7EF006D154B /* TableViewControllerLogros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogros.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				9D7433F3262B8D310038124A /* Katakana.storyboard */,
 				9D7433F6262B8D3B0038124A /* Kanji.storyboard */,
 				9D2EF310260FD5A300E2F97A /* Main.storyboard */,
+				93B550552651AEE000CAFB5D /* Config.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				9D2EF314260FD5A400E2F97A /* Assets.xcassets in Resources */,
 				9D2EF312260FD5A300E2F97A /* Main.storyboard in Resources */,
 				9D7433F1262B8D240038124A /* Hiragana.storyboard in Resources */,
+				93B550562651AEE000CAFB5D /* Config.storyboard in Resources */,
 				9D7433EE262B8BB50038124A /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

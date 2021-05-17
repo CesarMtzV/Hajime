@@ -8,6 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Config-->
+        <scene sceneID="Rdc-7b-SLk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Config" id="W5d-Iz-WGW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tpN-3N-v2n"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1L-uI-Hca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757" y="-360"/>
+        </scene>
         <!--Kanji View Controller-->
         <scene sceneID="nyb-1d-F3y">
             <objects>
