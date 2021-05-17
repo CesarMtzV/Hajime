@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewControllerLogroMas: UIViewController {
-    let defaults = UserDefaults.standard
     
     @IBOutlet weak var lbLogro: UILabel!
     @IBOutlet weak var lbDesc: UILabel!

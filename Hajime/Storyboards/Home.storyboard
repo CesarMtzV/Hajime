@@ -198,8 +198,6 @@
                         <outlet property="img" destination="24u-O0-fRw" id="QOF-wg-ZfH"/>
                         <outlet property="lbDesc" destination="TXk-aS-Lrv" id="Tft-Ud-1XK"/>
                         <outlet property="lbLogro" destination="uNW-4X-IEx" id="PCt-SN-iWW"/>
-                        <outlet property="lbPercentage" destination="97W-xf-Ohn" id="0gE-u1-Z5d"/>
-                        <outlet property="progressView" destination="5lL-2N-hgG" id="6SG-qW-RED"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ9-mR-bQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
