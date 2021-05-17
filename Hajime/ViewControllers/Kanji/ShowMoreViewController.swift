@@ -8,7 +8,6 @@
 import UIKit
 
 class ShowMoreViewController: UIViewController {
-    
     @IBOutlet weak var lbKanji: UILabel!
     @IBOutlet weak var lbTrazos: UILabel!
     
