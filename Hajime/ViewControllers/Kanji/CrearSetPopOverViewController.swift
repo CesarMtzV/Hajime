@@ -24,12 +24,22 @@ class CrearSetPopOverViewController: UIViewController {
         preferredContentSize = CGSize(width: 250, height: 200)
     }
     
+    //Obtener la dirección del folder para guardar los datos
+    func dataFileURL() -> URL {
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        
+        let pathArchivo = documentsDirectory.appendingPathComponent("KanjiSet").appendingPathExtension("plist")
+        
+        return pathArchivo
+    }
+    
+    
+    
     // Crear el nuevo set
     @IBAction func guardarSet(_ sender: UIButton) {
         //CHECAR ESTO
         let nuevoSet = KanjiSet(nombre: tfNombre.text!, listaKanji: [KanjiUsuario]())
         delegado.agregarSet(set: nuevoSet)
-        navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
     
