@@ -7,12 +7,28 @@
 
 import UIKit
 
-class AddKanjiViewController: UIViewController {
+protocol protocoloAgregarkanji {
+    func agregarKanji(kanji: KanjiUsuario)
+}
 
+class AddKanjiViewController: UIViewController {
+    
+    @IBOutlet weak var tfKanji: UITextField!
+    @IBOutlet weak var tfLecturas: UITextField!
+    @IBOutlet weak var tfSignificados: UITextField!
+    @IBOutlet weak var tfEjemplos: UITextField!
+    
+    var delegadoKanji : protocoloAgregarkanji!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func guardarKanji(_ sender: UIButton) {
+        delegadoKanji.agregarKanji(kanji: KanjiUsuario(caracter: tfKanji.text!, pronunciacion: tfLecturas.text!, significado: tfSignificados.text!, ejemplo: tfEjemplos.text!))
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
 

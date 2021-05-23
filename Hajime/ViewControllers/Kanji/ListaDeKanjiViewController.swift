@@ -11,7 +11,7 @@ protocol protocoloAgregarKanji {
     func agregarKanji(kanji: KanjiUsuario)
 }
 
-class ListaDeKanjiViewController: UIViewController {
+class ListaDeKanjiViewController: UIViewController, protocoloAgregarkanji {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -26,15 +26,26 @@ class ListaDeKanjiViewController: UIViewController {
     
 
     
-    // MARK: - Navigation
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//    }
+    //MARK: - Navigation
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "agregarKanji" {
+            let vistaAgregar = segue.destination as! AddKanjiViewController
+            
+            vistaAgregar.delegadoKanji = self
+        } else if segue.identifier == "kanjiDetalle" {
+            let vistaDetalle = segue.destination as! KanjiDetallesViewController
+            let indice = tableView.indexPathForSelectedRow!
+            vistaDetalle.kanjiSeleccionado = setKanji.listaKanji[indice.row]
+        }
+        
+    }
     
 
 }
 
+//MARK: - Configuración del Tableview
 extension ListaDeKanjiViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return setKanji.listaKanji.count
@@ -49,4 +60,13 @@ extension ListaDeKanjiViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     
+}
+
+//MARK: - Protocolo para agregar nuevo kanji
+
+extension ListaDeKanjiViewController: protocoloAgregarKanji {
+    func agregarKanji(kanji: KanjiUsuario) {
+        setKanji.listaKanji.append(kanji)
+        tableView.reloadData()
+    }
 }
