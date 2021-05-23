@@ -34,6 +34,10 @@ class KanjiViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        tvSets.reloadData()
+    }
+    
     // Darle estilo al botón
     func configurarBotones(){
         btnAgregar.layer.cornerRadius = 0.5 * btnAgregar.bounds.size.width
@@ -49,7 +53,7 @@ class KanjiViewController: UIViewController {
         return pathArchivo
     }
     
-    //Guardar los datos a memoria
+    //Funcion para guardar los datos a memoria
     @IBAction func guardarSet(){
         do {
             let data = try PropertyListEncoder().encode(listaDeSets)
@@ -59,7 +63,7 @@ class KanjiViewController: UIViewController {
         }
     }
     
-    //Obtener los sets guardados en memoria
+    //Funcion para obtener los sets guardados en memoria
     func obtenerSets(){
         // Limpiar el arreglo
         listaDeSets.removeAll()

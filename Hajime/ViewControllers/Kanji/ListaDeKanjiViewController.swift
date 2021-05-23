@@ -15,13 +15,20 @@ class ListaDeKanjiViewController: UIViewController, protocoloAgregarkanji {
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var btnAgregar: UIButton!
     
     var setKanji : KanjiSet!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configurarBotones()
+    }
+    
+    // Darle estilo al botón
+    func configurarBotones(){
+        btnAgregar.layer.cornerRadius = 0.5 * btnAgregar.bounds.size.width
+        btnAgregar.clipsToBounds = true
     }
     
 
