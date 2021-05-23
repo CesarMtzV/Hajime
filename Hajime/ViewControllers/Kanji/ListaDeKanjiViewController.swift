@@ -54,6 +54,7 @@ class ListaDeKanjiViewController: UIViewController, protocoloAgregarkanji {
 
 //MARK: - Configuración del Tableview
 extension ListaDeKanjiViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return setKanji.listaKanji.count
     }
@@ -66,7 +67,20 @@ extension ListaDeKanjiViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            
+            setKanji.listaKanji.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            tableView.endUpdates()
+        }
+    }
 }
 
 //MARK: - Protocolo para agregar nuevo kanji
