@@ -42,6 +42,7 @@
 		9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */; };
 		9DFF07C1265AA2AD002CC64F /* AddKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */; };
 		9DFF07C4265AC79B002CC64F /* KanjiDetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */; };
+		9DFF07C7265BF588002CC64F /* KanjiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaGridViewController.swift; sourceTree = "<group>"; };
 		9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKanjiViewController.swift; sourceTree = "<group>"; };
 		9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetallesViewController.swift; sourceTree = "<group>"; };
+		9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				9D5001E12655D06600AC15DC /* ListaDeKanjiViewController.swift */,
 				9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */,
 				9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */,
+				9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */,
 			);
 			path = Kanji;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */,
 				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
 				8F45FD252650DCF20092E11F /* HiraganaQuizViewController.swift in Sources */,
+				9DFF07C7265BF588002CC64F /* KanjiTableViewCell.swift in Sources */,
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,
 				9D699D9A262BB1240066B07E /* KanjiStruct.swift in Sources */,
 				9D4FBA83264F2F90001E0BEC /* KanjiUsuario.swift in Sources */,

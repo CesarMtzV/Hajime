@@ -60,11 +60,18 @@ extension ListaDeKanjiViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaKanji")!
         
-        cell.textLabel?.text = setKanji.listaKanji[indexPath.row].caracter
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaKanji") as! KanjiTableViewCell
+        
+        cell.lbCaracter?.text = setKanji.listaKanji[indexPath.row].caracter
+        cell.lbLecturas?.text = setKanji.listaKanji[indexPath.row].pronunciacion
+        cell.lbSignificados?.text = setKanji.listaKanji[indexPath.row].significado
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
