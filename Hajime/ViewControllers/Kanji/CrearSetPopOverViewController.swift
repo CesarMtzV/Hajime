@@ -29,7 +29,6 @@ class CrearSetPopOverViewController: UIViewController {
         //CHECAR ESTO
         let nuevoSet = KanjiSet(nombre: tfNombre.text!, listaKanji: [KanjiUsuario]())
         delegado.agregarSet(set: nuevoSet)
-        navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
     

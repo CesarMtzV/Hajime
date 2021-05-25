@@ -27,6 +27,7 @@
 		9D4FBA83264F2F90001E0BEC /* KanjiUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FBA82264F2F90001E0BEC /* KanjiUsuario.swift */; };
 		9D4FBA8626506FC6001E0BEC /* KanjiSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FBA8526506FC6001E0BEC /* KanjiSet.swift */; };
 		9D4FBA89265073F5001E0BEC /* CrearSetPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FBA88265073F5001E0BEC /* CrearSetPopOverViewController.swift */; };
+		9D5001E22655D06600AC15DC /* ListaDeKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5001E12655D06600AC15DC /* ListaDeKanjiViewController.swift */; };
 		9D6959E72647647B00352394 /* KanjiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6959E62647647B00352394 /* KanjiList.swift */; };
 		9D699D9A262BB1240066B07E /* KanjiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D699D99262BB1240066B07E /* KanjiStruct.swift */; };
 		9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7433E0262939E70038124A /* HiraganaViewController.swift */; };
@@ -39,6 +40,10 @@
 		9D8C064A2631322600941DF0 /* Hiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C06492631322600941DF0 /* Hiragana.swift */; };
 		9D8C064D2631344500941DF0 /* HiraganaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C064C2631344500941DF0 /* HiraganaCollectionViewCell.swift */; };
 		9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */; };
+		9DFF07C1265AA2AD002CC64F /* AddKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */; };
+		9DFF07C4265AC79B002CC64F /* KanjiDetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */; };
+		9DFF07C7265BF588002CC64F /* KanjiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */; };
+		9DFF07CC265C2361002CC64F /* EstudiarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07CB265C2361002CC64F /* EstudiarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,7 @@
 		9D4FBA82264F2F90001E0BEC /* KanjiUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiUsuario.swift; sourceTree = "<group>"; };
 		9D4FBA8526506FC6001E0BEC /* KanjiSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiSet.swift; sourceTree = "<group>"; };
 		9D4FBA88265073F5001E0BEC /* CrearSetPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearSetPopOverViewController.swift; sourceTree = "<group>"; };
+		9D5001E12655D06600AC15DC /* ListaDeKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeKanjiViewController.swift; sourceTree = "<group>"; };
 		9D6959E62647647B00352394 /* KanjiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiList.swift; sourceTree = "<group>"; };
 		9D699D99262BB1240066B07E /* KanjiStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiStruct.swift; sourceTree = "<group>"; };
 		9D7433E0262939E70038124A /* HiraganaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,10 @@
 		9D8C06492631322600941DF0 /* Hiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiragana.swift; sourceTree = "<group>"; };
 		9D8C064C2631344500941DF0 /* HiraganaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaCollectionViewCell.swift; sourceTree = "<group>"; };
 		9DB91A5F262E32F100B574D8 /* HiraganaGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaGridViewController.swift; sourceTree = "<group>"; };
+		9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKanjiViewController.swift; sourceTree = "<group>"; };
+		9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetallesViewController.swift; sourceTree = "<group>"; };
+		9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTableViewCell.swift; sourceTree = "<group>"; };
+		9DFF07CB265C2361002CC64F /* EstudiarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstudiarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +114,17 @@
 		9D2DC8DC263085EE00F716AA /* Kanji */ = {
 			isa = PBXGroup;
 			children = (
+				9DFF07C9265C2046002CC64F /* Estudiar */,
 				9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */,
 				9D424BDC26347DD700141E85 /* KanjiViewController.swift */,
 				9D6959E62647647B00352394 /* KanjiList.swift */,
 				9D4FBA82264F2F90001E0BEC /* KanjiUsuario.swift */,
 				9D4FBA8526506FC6001E0BEC /* KanjiSet.swift */,
 				9D4FBA88265073F5001E0BEC /* CrearSetPopOverViewController.swift */,
+				9D5001E12655D06600AC15DC /* ListaDeKanjiViewController.swift */,
+				9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */,
+				9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */,
+				9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */,
 			);
 			path = Kanji;
 			sourceTree = "<group>";
@@ -209,6 +224,14 @@
 			path = Hiragana;
 			sourceTree = "<group>";
 		};
+		9DFF07C9265C2046002CC64F /* Estudiar */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF07CB265C2361002CC64F /* EstudiarViewController.swift */,
+			);
+			path = Estudiar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,13 +310,16 @@
 				9D2DC8E12630892600F716AA /* KatakanaGridViewController.swift in Sources */,
 				9D8C06472630D50900941DF0 /* Katakana.swift in Sources */,
 				9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */,
+				9DFF07CC265C2361002CC64F /* EstudiarViewController.swift in Sources */,
 				9D4FBA8626506FC6001E0BEC /* KanjiSet.swift in Sources */,
 				9D8C06442630D1FD00941DF0 /* KatakanaCollectionViewCell.swift in Sources */,
 				9D424BDD26347DD700141E85 /* KanjiViewController.swift in Sources */,
 				9D0B76652641FBF0006A43BC /* Logros.swift in Sources */,
+				9DFF07C4265AC79B002CC64F /* KanjiDetallesViewController.swift in Sources */,
 				9D2EF30F260FD5A300E2F97A /* ViewController.swift in Sources */,
 				9D7433E1262939E70038124A /* HiraganaViewController.swift in Sources */,
 				8F45FD252650DCF20092E11F /* HiraganaQuizViewController.swift in Sources */,
+				9DFF07C7265BF588002CC64F /* KanjiTableViewCell.swift in Sources */,
 				9D2EF30B260FD5A300E2F97A /* AppDelegate.swift in Sources */,
 				9D699D9A262BB1240066B07E /* KanjiStruct.swift in Sources */,
 				9D4FBA83264F2F90001E0BEC /* KanjiUsuario.swift in Sources */,
@@ -304,8 +330,10 @@
 				9D8C064D2631344500941DF0 /* HiraganaCollectionViewCell.swift in Sources */,
 				9D1E3DAF262CAA96006D154B /* ViewControllerLogroMas.swift in Sources */,
 				9D2EF30D260FD5A300E2F97A /* SceneDelegate.swift in Sources */,
+				9DFF07C1265AA2AD002CC64F /* AddKanjiViewController.swift in Sources */,
 				93E6D1EC262DF88A003CC75D /* ConfigViewController.swift in Sources */,
 				9D2DC8E526308B9C00F716AA /* KatakanaViewController.swift in Sources */,
+				9D5001E22655D06600AC15DC /* ListaDeKanjiViewController.swift in Sources */,
 				9D1E3DAC262CA7EF006D154B /* TableViewControllerLogros.swift in Sources */,
 				8F45FD282650EFCB0092E11F /* KatakanaQuizViewController.swift in Sources */,
 			);
