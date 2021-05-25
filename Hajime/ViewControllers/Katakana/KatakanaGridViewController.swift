@@ -14,7 +14,7 @@ class KatakanaGridViewController: UIViewController, UICollectionViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Referencias"
+        title = "References"
         
         collectionView.dataSource = self
         collectionView.delegate = self

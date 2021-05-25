@@ -16,7 +16,7 @@ class HiraganaGridViewController: UIViewController {
         super.viewDidLoad()
 
         //Configurar la Navbar superior
-        title = "Referencias"
+        title = "References"
         
         collectionView.dataSource = self
         collectionView.delegate = self
