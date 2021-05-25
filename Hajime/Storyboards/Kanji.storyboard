@@ -606,6 +606,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="WmS-3e-BWU"/>
                     <connections>
+                        <outlet property="btnCorrecto" destination="aKf-ca-5Y4" id="MWe-UP-zS6"/>
+                        <outlet property="btnIncorrecto" destination="Q2c-yl-7EY" id="4jC-IO-7De"/>
                         <outlet property="canvasView" destination="I0r-Pd-Jyn" id="Knm-9G-HCV"/>
                         <outlet property="lbLecturas" destination="Z05-uh-Snz" id="Nro-FI-N63"/>
                         <outlet property="lbRespuesta" destination="pHn-hP-b8z" id="a03-tE-FZz"/>

@@ -9,25 +9,40 @@ import UIKit
 
 class EstudiarViewController: UIViewController {
     
-    
+    //MARK: - VARIABLES
     @IBOutlet weak var canvasView: UIView!
     @IBOutlet weak var lbRespuesta: UILabel!
     @IBOutlet weak var lbSignificados: UILabel!
     @IBOutlet weak var lbLecturas: UILabel!
+    @IBOutlet weak var btnIncorrecto: UIButton!
+    @IBOutlet weak var btnCorrecto: UIButton!
     
     var listaKanji = [KanjiUsuario]()
     var path = UIBezierPath()
     var startPoint = CGPoint()
     var touchPoint = CGPoint()
+    
+    var kanjiActual : Int = 0
 
+    //MARK: - CARGAR LA VISTA
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Configuración del canvas
         canvasView.clipsToBounds = true
         canvasView.isMultipleTouchEnabled = false
+        
+        //Configurar el contenido inicial de los labels
+        lbLecturas.text = listaKanji[kanjiActual].pronunciacion
+        lbSignificados.text = listaKanji[kanjiActual].significado
+        lbRespuesta.text = ""
+        
+        //Esconder inicialmente los botones
+        btnIncorrecto.isHidden = true
+        btnCorrecto.isHidden = true
     }
     
+    //MARK: - CONFIGURACION DEL CANVAS
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
         if let point = touch?.location(in: canvasView){
@@ -58,14 +73,54 @@ class EstudiarViewController: UIViewController {
         canvasView.setNeedsDisplay()
     }
     
+    func borrarCanvas(){
+        path.removeAllPoints()
+        canvasView.layer.sublayers = nil
+        canvasView.setNeedsDisplay()
+    }
     
+    //MARK: - FUNCIONES
+    
+    func mostrarBotones() {
+        btnCorrecto.isHidden = false
+        btnIncorrecto.isHidden = false
+    }
+    
+    func esconderBotones() {
+        btnCorrecto.isHidden = true
+        btnIncorrecto.isHidden = true
+    }
+    
+    
+    //MARK: - CONFIGURACION DE LOS BOTONES
     @IBAction func mostrarRespuesta(_ sender: UIButton) {
+        lbRespuesta.text = listaKanji[kanjiActual].caracter
+        mostrarBotones()
     }
+    
     @IBAction func limpiarCanvas(_ sender: UIButton) {
+        borrarCanvas()
     }
+    
     @IBAction func respuestaIncorrecta(_ sender: UIButton) {
+        borrarCanvas()
+        lbRespuesta.text = ""
+        esconderBotones()
     }
+    
     @IBAction func respuestaCorrecta(_ sender: UIButton) {
+        borrarCanvas()
+        if kanjiActual+1 < listaKanji.count {
+            kanjiActual += 1
+            lbLecturas.text = listaKanji[kanjiActual].pronunciacion
+            lbSignificados.text = listaKanji[kanjiActual].significado
+            lbRespuesta.text = ""
+            esconderBotones()
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
+        
+        
     }
     
 
