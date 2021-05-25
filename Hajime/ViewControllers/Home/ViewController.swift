@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         }
         
         let content = UNMutableNotificationContent()
-        content.title = "¡Es hora de estudiar!"
-        content.body = "La práctica hace al maestro"
+        content.title = "¡Time to study!"
+        content.body = "Practice makes perfect"
         
         var dateComponents = DateComponents()
         dateComponents.hour = 11
