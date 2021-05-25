@@ -43,6 +43,7 @@
 		9DFF07C1265AA2AD002CC64F /* AddKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */; };
 		9DFF07C4265AC79B002CC64F /* KanjiDetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */; };
 		9DFF07C7265BF588002CC64F /* KanjiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */; };
+		9DFF07CC265C2361002CC64F /* EstudiarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF07CB265C2361002CC64F /* EstudiarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		9DFF07C0265AA2AD002CC64F /* AddKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKanjiViewController.swift; sourceTree = "<group>"; };
 		9DFF07C3265AC79B002CC64F /* KanjiDetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetallesViewController.swift; sourceTree = "<group>"; };
 		9DFF07C6265BF588002CC64F /* KanjiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTableViewCell.swift; sourceTree = "<group>"; };
+		9DFF07CB265C2361002CC64F /* EstudiarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstudiarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		9D2DC8DC263085EE00F716AA /* Kanji */ = {
 			isa = PBXGroup;
 			children = (
+				9DFF07C9265C2046002CC64F /* Estudiar */,
 				9D3D0F7A262B6D5300B63EA7 /* ShowMoreViewController.swift */,
 				9D424BDC26347DD700141E85 /* KanjiViewController.swift */,
 				9D6959E62647647B00352394 /* KanjiList.swift */,
@@ -221,6 +224,14 @@
 			path = Hiragana;
 			sourceTree = "<group>";
 		};
+		9DFF07C9265C2046002CC64F /* Estudiar */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF07CB265C2361002CC64F /* EstudiarViewController.swift */,
+			);
+			path = Estudiar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,6 +310,7 @@
 				9D2DC8E12630892600F716AA /* KatakanaGridViewController.swift in Sources */,
 				9D8C06472630D50900941DF0 /* Katakana.swift in Sources */,
 				9DB91A60262E32F100B574D8 /* HiraganaGridViewController.swift in Sources */,
+				9DFF07CC265C2361002CC64F /* EstudiarViewController.swift in Sources */,
 				9D4FBA8626506FC6001E0BEC /* KanjiSet.swift in Sources */,
 				9D8C06442630D1FD00941DF0 /* KatakanaCollectionViewCell.swift in Sources */,
 				9D424BDD26347DD700141E85 /* KanjiViewController.swift in Sources */,

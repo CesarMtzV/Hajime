@@ -38,13 +38,22 @@ class ListaDeKanjiViewController: UIViewController, protocoloAgregarkanji {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "agregarKanji" {
+            
             let vistaAgregar = segue.destination as! AddKanjiViewController
             
             vistaAgregar.delegadoKanji = self
+            
         } else if segue.identifier == "kanjiDetalle" {
+            
             let vistaDetalle = segue.destination as! KanjiDetallesViewController
             let indice = tableView.indexPathForSelectedRow!
             vistaDetalle.kanjiSeleccionado = setKanji.listaKanji[indice.row]
+            
+        } else if segue.identifier == "estudiar" {
+            
+            let vistaEstudiar = segue.destination as! EstudiarViewController
+            
+            vistaEstudiar.listaKanji = setKanji.listaKanji
         }
         
     }
