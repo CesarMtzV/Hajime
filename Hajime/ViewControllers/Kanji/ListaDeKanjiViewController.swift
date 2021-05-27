@@ -23,6 +23,8 @@ class ListaDeKanjiViewController: UIViewController, protocoloAgregarkanji {
         super.viewDidLoad()
 
         configurarBotones()
+        
+        title = "Kanji list"
     }
     
     // Darle estilo al botón

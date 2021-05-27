@@ -22,6 +22,8 @@ class KanjiDetallesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Kanji Details"
 
         lbCaracter.text = kanjiSeleccionado.caracter
         lbLecturas.text = kanjiSeleccionado.pronunciacion

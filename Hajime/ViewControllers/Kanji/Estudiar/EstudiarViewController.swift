@@ -29,6 +29,8 @@ class EstudiarViewController: UIViewController {
     //MARK: - CARGAR LA VISTA
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Study"
 
         // Configuración del canvas
         canvasView.clipsToBounds = true

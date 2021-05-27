@@ -29,6 +29,8 @@ class AddKanjiViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Add kanji"
+        
         viewKanji.layer.cornerRadius = 5
         viewKanji.clipsToBounds = true
         
