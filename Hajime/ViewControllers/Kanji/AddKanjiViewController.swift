@@ -17,11 +17,32 @@ class AddKanjiViewController: UIViewController {
     @IBOutlet weak var tfLecturas: UITextField!
     @IBOutlet weak var tfSignificados: UITextField!
     @IBOutlet weak var tfEjemplos: UITextField!
+    @IBOutlet weak var viewKanji: UIView!
+    @IBOutlet weak var viewLecturas: UIView!
+    @IBOutlet weak var viewSignificados: UIView!
+    @IBOutlet weak var viewEjemplos: UIView!
+    @IBOutlet weak var btnGuardar: UIButton!
+    
     
     var delegadoKanji : protocoloAgregarkanji!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewKanji.layer.cornerRadius = 5
+        viewKanji.clipsToBounds = true
+        
+        viewLecturas.layer.cornerRadius = 5
+        viewLecturas.clipsToBounds = true
+        
+        viewSignificados.layer.cornerRadius = 5
+        viewSignificados.clipsToBounds = true
+        
+        viewEjemplos.layer.cornerRadius = 5
+        viewEjemplos.clipsToBounds = true
+        
+        btnGuardar.layer.cornerRadius = 5
+        btnGuardar.clipsToBounds = true
     }
     
     
@@ -30,16 +51,5 @@ class AddKanjiViewController: UIViewController {
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -16,6 +16,8 @@ class EstudiarViewController: UIViewController {
     @IBOutlet weak var lbLecturas: UILabel!
     @IBOutlet weak var btnIncorrecto: UIButton!
     @IBOutlet weak var btnCorrecto: UIButton!
+    @IBOutlet weak var btnLimpiar: UIButton!
+    @IBOutlet weak var btnMostrarRespuesta: UIButton!
     
     var listaKanji = [KanjiUsuario]()
     var path = UIBezierPath()
@@ -40,6 +42,9 @@ class EstudiarViewController: UIViewController {
         //Esconder inicialmente los botones
         btnIncorrecto.isHidden = true
         btnCorrecto.isHidden = true
+        
+        //Hacer las esquinas de los botones redondas
+        configurarBotones()
     }
     
     //MARK: - CONFIGURACION DEL CANVAS
@@ -91,6 +96,19 @@ class EstudiarViewController: UIViewController {
         btnIncorrecto.isHidden = true
     }
     
+    func configurarBotones(){
+        btnCorrecto.layer.cornerRadius = 5
+        btnCorrecto.clipsToBounds = true
+        
+        btnIncorrecto.layer.cornerRadius = 5
+        btnIncorrecto.clipsToBounds = true
+        
+        btnLimpiar.layer.cornerRadius = 5
+        btnLimpiar.clipsToBounds = true
+        
+        btnMostrarRespuesta.layer.cornerRadius = 5
+        btnMostrarRespuesta.clipsToBounds = true
+    }
     
     //MARK: - CONFIGURACION DE LOS BOTONES
     @IBAction func mostrarRespuesta(_ sender: UIButton) {

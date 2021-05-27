@@ -110,8 +110,11 @@ extension KanjiViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaGrupo")!
+        let numKanji = String(listaDeSets[indexPath.row].listaKanji.count)
         cell.textLabel?.text = listaDeSets[indexPath.row].nombre
-        cell.detailTextLabel?.text = String(listaDeSets[indexPath.row].listaKanji.count)
+        cell.detailTextLabel?.text = "\(numKanji) kanji"
+        
+        cell.textLabel?.textColor = .white
         
         return cell
     }

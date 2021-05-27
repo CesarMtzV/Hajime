@@ -13,6 +13,10 @@ class KanjiDetallesViewController: UIViewController {
     @IBOutlet weak var lbLecturas: UILabel!
     @IBOutlet weak var lbSignificado: UILabel!
     @IBOutlet weak var lbEjemplos: UILabel!
+    @IBOutlet weak var lbIndicadorLecturas: UILabel!
+    @IBOutlet weak var lbIndicadorSignificados: UILabel!
+    @IBOutlet weak var lbIndicadorEjemplos: UILabel!
+    
     
     var kanjiSeleccionado : KanjiUsuario!
 
@@ -23,6 +27,21 @@ class KanjiDetallesViewController: UIViewController {
         lbLecturas.text = kanjiSeleccionado.pronunciacion
         lbSignificado.text = kanjiSeleccionado.significado
         lbEjemplos.text = kanjiSeleccionado.ejemplo
+        
+        //Hacer las esquinas redondas
+        
+        lbCaracter.layer.cornerRadius = 5
+        lbCaracter.clipsToBounds = true
+        
+        lbIndicadorLecturas.layer.cornerRadius = 8
+        lbIndicadorLecturas.clipsToBounds = true
+        
+        lbIndicadorSignificados.layer.cornerRadius = 8
+        lbIndicadorSignificados.clipsToBounds = true
+        
+        lbIndicadorEjemplos.layer.cornerRadius = 8
+        lbIndicadorEjemplos.clipsToBounds = true
+        
     }
     
 
