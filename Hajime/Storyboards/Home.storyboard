@@ -29,23 +29,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54W-bE-pRS">
                                 <rect key="frame" x="16" y="104" width="343" height="127"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Achievements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odG-v9-c0A">
-                                        <rect key="frame" x="18" y="17" width="116" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achievements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odG-v9-c0A">
+                                        <rect key="frame" x="18" y="18" width="116" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⭐️  Create your first deck of cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvq-7B-JZe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️  Create your first deck of cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvq-7B-JZe">
                                         <rect key="frame" x="18" y="54" width="237" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJy-SD-Cto">
-                                        <rect key="frame" x="195" y="90" width="140" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJy-SD-Cto">
+                                        <rect key="frame" x="195" y="89" width="140" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                         <state key="normal" title="See Achievements">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,7 +54,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Pvq-7B-JZe" firstAttribute="leading" secondItem="54W-bE-pRS" secondAttribute="leading" constant="18" id="3aK-w2-Bsq"/>
+                                    <constraint firstItem="Pvq-7B-JZe" firstAttribute="top" secondItem="odG-v9-c0A" secondAttribute="bottom" constant="15" id="IxA-PU-btX"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZJy-SD-Cto" secondAttribute="trailing" constant="8" id="MBu-zU-EPQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZJy-SD-Cto" secondAttribute="bottom" constant="8" id="R0o-4K-uZK"/>
+                                    <constraint firstItem="odG-v9-c0A" firstAttribute="leading" secondItem="54W-bE-pRS" secondAttribute="leading" constant="18" id="XCi-2C-Zrg"/>
                                     <constraint firstAttribute="width" constant="343" id="a0s-bT-ShX"/>
+                                    <constraint firstItem="odG-v9-c0A" firstAttribute="top" secondItem="54W-bE-pRS" secondAttribute="top" constant="18" id="g8D-yE-Zd8"/>
                                     <constraint firstAttribute="height" constant="127" id="jzb-GO-byt"/>
                                 </constraints>
                             </view>
