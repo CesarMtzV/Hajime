@@ -256,7 +256,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lecturas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="277-3J-g8c">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="277-3J-g8c">
                                 <rect key="frame" x="16" y="204" width="95" height="30"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -267,7 +267,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Significado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-wk-nlR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meaning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-wk-nlR">
                                 <rect key="frame" x="16" y="270" width="95" height="30"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -278,7 +278,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ejemplos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-vG-1Fq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-vG-1Fq">
                                 <rect key="frame" x="16" y="336" width="95" height="30"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -469,6 +469,7 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="VFo-HP-2Gw" firstAttribute="top" secondItem="H5O-9z-07Y" secondAttribute="bottom" constant="20" id="6gv-kS-xWM"/>
                                             <constraint firstItem="Kv8-Qc-oLD" firstAttribute="top" secondItem="BF5-iK-u4U" secondAttribute="bottom" constant="50" id="932-GZ-imV"/>
@@ -636,7 +637,7 @@
                                     <constraint firstAttribute="width" constant="147" id="Br7-0M-08h"/>
                                     <constraint firstAttribute="height" constant="30" id="rar-UF-npr"/>
                                 </constraints>
-                                <state key="normal" title="Mostrar respuesta">
+                                <state key="normal" title="Show answer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -672,7 +673,7 @@
                                     <constraint firstAttribute="width" constant="65" id="IWC-Et-NhI"/>
                                     <constraint firstAttribute="height" constant="30" id="OHN-P0-Qfd"/>
                                 </constraints>
-                                <state key="normal" title="Limpiar">
+                                <state key="normal" title="Clean">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -686,7 +687,7 @@
                                     <constraint firstAttribute="height" constant="30" id="NkT-Oh-yjj"/>
                                     <constraint firstAttribute="width" constant="100" id="Nn4-GK-PYg"/>
                                 </constraints>
-                                <state key="normal" title="Incorrecto">
+                                <state key="normal" title="Incorrect">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
@@ -700,7 +701,7 @@
                                     <constraint firstAttribute="width" constant="100" id="1k5-WL-IDL"/>
                                     <constraint firstAttribute="height" constant="30" id="nvG-BW-X9D"/>
                                 </constraints>
-                                <state key="normal" title="Correcto">
+                                <state key="normal" title="Correct">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>

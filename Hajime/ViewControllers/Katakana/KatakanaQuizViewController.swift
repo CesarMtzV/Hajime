@@ -27,7 +27,7 @@ class KatakanaQuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Quiz"
         lbHighScore.text = String(defaults.integer(forKey: "katakana"))
         highScore = defaults.integer(forKey: "katakana")
         

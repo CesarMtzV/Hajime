@@ -27,7 +27,7 @@ class HiraganaQuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Quiz"
         lbHighScore.text = String(defaults.integer(forKey: "hiragana"))
         highScore = defaults.integer(forKey: "hiragana")
         

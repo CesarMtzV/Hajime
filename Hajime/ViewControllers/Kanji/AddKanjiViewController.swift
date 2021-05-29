@@ -45,6 +45,10 @@ class AddKanjiViewController: UIViewController {
         
         btnGuardar.layer.cornerRadius = 5
         btnGuardar.clipsToBounds = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(removeKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
     
     
@@ -53,5 +57,8 @@ class AddKanjiViewController: UIViewController {
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
-
+    
+    @IBAction func removeKeyboard(_ sender: Any) {
+        view.endEditing(true)
+    }
 }
