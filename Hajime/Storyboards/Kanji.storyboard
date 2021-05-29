@@ -112,7 +112,11 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="quK-UH-2TW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
+<<<<<<< HEAD
                                 <segue destination="W5d-Iz-WGW" kind="show" id="dey-gi-uMg"/>
+=======
+                                <segue destination="W5d-Iz-WGW" kind="show" id="d5e-cW-Vfa"/>
+>>>>>>> 27e3af8fb74d6e8c20b0dfa28bfb3a4117e514a1
                             </connections>
                         </barButtonItem>
                     </navigationItem>
