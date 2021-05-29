@@ -14,6 +14,7 @@ var reminderHour: Int = 0
 var reminderMin: Int = 0
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var btShowMore: UIButton!
     
     override func viewDidLoad() {
@@ -59,5 +60,8 @@ class ViewController: UIViewController {
         reminderMin = defaults.integer(forKey: "tfMinutes")
     }
     
+    override open var shouldAutorotate: Bool {
+        return false
+    }
+    
 }
-

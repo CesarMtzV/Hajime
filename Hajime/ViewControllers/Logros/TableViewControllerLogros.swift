@@ -29,8 +29,12 @@ class TableViewControllerLogros: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+<<<<<<< HEAD
         title = "Logros"
         actualizarInterfaz()
+=======
+        title = "Achievements"
+>>>>>>> 42718a363a033e1c41883d7391adfeb22f7db6bb
     }    
     // MARK: - Table view data source
 

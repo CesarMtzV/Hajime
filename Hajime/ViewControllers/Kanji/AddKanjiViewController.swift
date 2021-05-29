@@ -61,4 +61,9 @@ class AddKanjiViewController: UIViewController {
         defaults.setValue(true, forKey: "Kanji")
     }
 
+    
+    
+    @IBAction func quitTelcado(_ sender: Any) {
+        view.endEditing(true)
+    }
 }

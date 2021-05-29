@@ -9,7 +9,6 @@ import UIKit
 
 class ConfigViewController: UIViewController {
     @IBOutlet weak var switchNotifications: UISwitch!
-    @IBOutlet weak var switchReminder: UISwitch!
     @IBOutlet weak var textfieldHours: UITextField!
     @IBOutlet weak var textfieldMinutes: UITextField!
     
@@ -23,7 +22,6 @@ class ConfigViewController: UIViewController {
     func updateConfigValues() {
         let defaults = UserDefaults.standard
         switchNotifications.isOn = defaults.bool(forKey: "notifSwitch")
-        switchReminder.isOn = defaults.bool(forKey: "reminderSwitch")
         
         if let hours = defaults.value(forKey: "tfHours") as? String{
             textfieldHours.text = hours
@@ -47,8 +45,7 @@ class ConfigViewController: UIViewController {
     
     @IBAction func saveConfigValues() {
         let defaults = UserDefaults.standard
-        
-        defaults.set(switchReminder.isOn, forKey: "reminderSwitch")
+    
         defaults.set(switchNotifications.isOn, forKey: "notifSwitch")
         defaults.setValue(textfieldHours.text, forKey: "tfHours")
         defaults.setValue(textfieldMinutes.text, forKey: "tfMinutes")
