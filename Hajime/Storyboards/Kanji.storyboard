@@ -111,6 +111,9 @@
                     <navigationItem key="navigationItem" id="TH5-bZ-Slx">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="quK-UH-2TW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="W5d-Iz-WGW" kind="show" id="d5e-cW-Vfa"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
