@@ -139,9 +139,20 @@ class EstudiarViewController: UIViewController {
         } else {
             navigationController?.popViewController(animated: true)
         }
+        guardarDatos()
         
         
     }
+    
+    func guardarDatos() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "Artist")
+    }
+    
+    
+    
+    
     
 
     /*

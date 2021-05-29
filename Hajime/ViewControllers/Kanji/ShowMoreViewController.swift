@@ -65,11 +65,10 @@ class ShowMoreViewController: UIViewController {
     }
       
     @IBAction func btGenerar(_ sender: UIButton) {
+        
         randomIndex = Int.random(in: 0..<KanjiList.count)
         
-        KanjiData.kun_readings.removeAll()
-        KanjiData.on_readings.removeAll()
-        KanjiData.meanings.removeAll()
+        
         
         if fetchKanjiData() {
             lbKanji.text = KanjiData.kanji
@@ -117,6 +116,13 @@ class ShowMoreViewController: UIViewController {
                 }
             }
         }
+        guardarDatos()
+    }
+    
+    func guardarDatos() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "Random")
     }
     
     
