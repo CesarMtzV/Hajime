@@ -54,4 +54,9 @@ class AddKanjiViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    
+    
+    @IBAction func quitTelcado(_ sender: Any) {
+        view.endEditing(true)
+    }
 }

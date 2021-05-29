@@ -111,6 +111,9 @@
                     <navigationItem key="navigationItem" id="TH5-bZ-Slx">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="quK-UH-2TW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="W5d-Iz-WGW" kind="show" id="dey-gi-uMg"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -466,6 +469,7 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="VFo-HP-2Gw" firstAttribute="top" secondItem="H5O-9z-07Y" secondAttribute="bottom" constant="20" id="6gv-kS-xWM"/>
                                             <constraint firstItem="Kv8-Qc-oLD" firstAttribute="top" secondItem="BF5-iK-u4U" secondAttribute="bottom" constant="50" id="932-GZ-imV"/>
@@ -484,6 +488,9 @@
                                             <constraint firstItem="eyB-Wc-F9i" firstAttribute="top" secondItem="vyC-EU-9eu" secondAttribute="top" constant="20" id="uNw-D3-8hn"/>
                                             <constraint firstItem="BF5-iK-u4U" firstAttribute="top" secondItem="VFo-HP-2Gw" secondAttribute="bottom" constant="20" id="utN-oS-10q"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cqj-vl-EFo" appends="YES" id="UXG-Rw-yAD"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -520,6 +527,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yx-kD-pvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cqj-vl-EFo">
+                    <connections>
+                        <action selector="quitTelcado:" destination="lU1-hP-7C9" id="ef1-lL-gZc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2997.5999999999999" y="957.12143928035994"/>
         </scene>
