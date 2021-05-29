@@ -112,11 +112,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="quK-UH-2TW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-<<<<<<< HEAD
                                 <segue destination="W5d-Iz-WGW" kind="show" id="dey-gi-uMg"/>
-=======
-                                <segue destination="W5d-Iz-WGW" kind="show" id="d5e-cW-Vfa"/>
->>>>>>> 27e3af8fb74d6e8c20b0dfa28bfb3a4117e514a1
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -492,9 +488,6 @@
                                             <constraint firstItem="eyB-Wc-F9i" firstAttribute="top" secondItem="vyC-EU-9eu" secondAttribute="top" constant="20" id="uNw-D3-8hn"/>
                                             <constraint firstItem="BF5-iK-u4U" firstAttribute="top" secondItem="VFo-HP-2Gw" secondAttribute="bottom" constant="20" id="utN-oS-10q"/>
                                         </constraints>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="cqj-vl-EFo" appends="YES" id="UXG-Rw-yAD"/>
-                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -531,11 +524,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yx-kD-pvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="cqj-vl-EFo">
-                    <connections>
-                        <action selector="quitTelcado:" destination="lU1-hP-7C9" id="ef1-lL-gZc"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2997.5999999999999" y="957.12143928035994"/>
         </scene>
