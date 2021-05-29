@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "353AE15C-AD5F-4841-8DB7-63A4E9EA09F1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF501E17-9AC6-47D8-9399-4367D8C28AD6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hajime/ViewControllers/Hiragana/HiraganaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "configurarBotones()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2CFEF89-C6D1-40E3-AE08-43CD3A0F76AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "HiraganaQuizViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D2CFEF89-C6D1-40E3-AE08-43CD3A0F76AB - 515f6bf88c89f091"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hajime.HiraganaQuizViewController.btnA3.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Hajime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user189597/Documents/Mobile%20Development/Hajime/Hajime/Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "D2CFEF89-C6D1-40E3-AE08-43CD3A0F76AB - d4a4c6348802c08d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hajime.HiraganaQuizViewController.btnA3.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Hajime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user189597/Documents/Mobile%20Development/Hajime/Hajime/Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "D2CFEF89-C6D1-40E3-AE08-43CD3A0F76AB - 58d5155f912131c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hajime.HiraganaQuizViewController.btnA3.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Hajime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user189597/Documents/Mobile%20Development/Hajime/Hajime/Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "D2CFEF89-C6D1-40E3-AE08-43CD3A0F76AB - b3136a08b1c6c176"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hajime.HiraganaQuizViewController.btnA3.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Hajime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user189597/Documents/Mobile%20Development/Hajime/Hajime/Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "D2CFEF89-C6D1-40E3-AE08-43CD3A0F76AB - 8b0e3a7c35e6c208"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hajime.HiraganaQuizViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Hajime.HiraganaQuizViewController"
+                  moduleName = "Hajime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user189597/Documents/Mobile%20Development/Hajime/Hajime/Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1578">
+               </Location>
+               <Location
+                  uuid = "D2CFEF89-C6D1-40E3-AE08-43CD3A0F76AB - 6e8aeefc910669ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hajime.HiraganaQuizViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Hajime.HiraganaQuizViewController&gt;"
+                  moduleName = "Hajime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user189597/Documents/Mobile%20Development/Hajime/Hajime/Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1519">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9658AB1E-9B3C-45B5-AE86-7BD22E5458DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hajime/ViewControllers/Katakana/KatakanaQuizViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "KatakanaQuizViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

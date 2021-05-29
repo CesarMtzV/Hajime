@@ -35,6 +35,8 @@ class HiraganaQuizViewController: UIViewController {
         btnA2.layer.cornerRadius = 10
         btnA3.layer.cornerRadius = 10
         btnA4.layer.cornerRadius = 10
+        
+        title = "Quiz"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,10 +81,10 @@ class HiraganaQuizViewController: UIViewController {
             button = view.viewWithTag(i) as! UIButton
             
             if i == Int(rightAnswer) {
-                button.setTitle(hiragana[Int(currentSymbol)].reading, for: .normal)
+                button.setTitle("     " + hiragana[Int(currentSymbol)].reading + "     ", for: .normal)
             }
             else {
-                button.setTitle(hiragana[Int(x)].reading, for: .normal)
+                button.setTitle("     " + hiragana[Int(x)].reading + "     ", for: .normal)
                 x = arc4random_uniform(UInt32(hiragana.count))
                 
                 while x == currentSymbol {
