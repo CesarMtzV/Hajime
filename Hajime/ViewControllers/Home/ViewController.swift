@@ -16,6 +16,8 @@ var reminderMin: Int = 0
 class ViewController: UIViewController {
     
     @IBOutlet weak var btShowMore: UIButton!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,8 @@ class ViewController: UIViewController {
     
     func configurarNavbar(){
         title = "Hajime"
+        view1.layer.cornerRadius = 10.0
+        view2.layer.cornerRadius = 10.0
     }
 
     func getConfigValues() {
