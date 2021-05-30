@@ -48,16 +48,20 @@ class HiraganaQuizViewController: UIViewController {
             score += 1
             if score > highScore {
                 highScore = score
+                guardarDatosHiraganaRecord()
             }
         }
         else {
             if score > highScore {
                 highScore = score
+                guardarDatosHiraganaRecord()
             }
             score = 0
         }
         
         defaults.setValue(highScore, forKey: "hiragana")
+        
+        guardarDatos()
         
         nextQuestion()
     }
@@ -92,6 +96,18 @@ class HiraganaQuizViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func guardarDatos() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "Hiragana")
+    }
+    
+    func guardarDatosHiraganaRecord() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "NewRecordH")
     }
     
     /*

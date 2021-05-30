@@ -49,10 +49,20 @@ class ConfigViewController: UIViewController {
         defaults.set(switchNotifications.isOn, forKey: "notifSwitch")
         defaults.setValue(textfieldHours.text, forKey: "tfHours")
         defaults.setValue(textfieldMinutes.text, forKey: "tfMinutes")
+        
+        if switchNotifications.isOn{
+            guardarDatos()
+        }
     }
     
     @IBAction func removeKeyboard(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
+    }
+    
+    func guardarDatos() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "NewAlerts")
     }
     
 

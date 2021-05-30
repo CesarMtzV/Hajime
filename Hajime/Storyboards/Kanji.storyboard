@@ -112,7 +112,9 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings-30" id="quK-UH-2TW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="W5d-Iz-WGW" kind="show" id="dey-gi-uMg"/>
+
+                                <segue destination="W5d-Iz-WGW" kind="show" id="d5e-cW-Vfa"/>
+
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -256,7 +258,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="277-3J-g8c">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lecturas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="277-3J-g8c">
                                 <rect key="frame" x="16" y="204" width="95" height="30"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -267,7 +269,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meaning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-wk-nlR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Significado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-wk-nlR">
                                 <rect key="frame" x="16" y="270" width="95" height="30"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -278,7 +280,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-vG-1Fq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ejemplos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-vG-1Fq">
                                 <rect key="frame" x="16" y="336" width="95" height="30"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -488,6 +490,9 @@
                                             <constraint firstItem="eyB-Wc-F9i" firstAttribute="top" secondItem="vyC-EU-9eu" secondAttribute="top" constant="20" id="uNw-D3-8hn"/>
                                             <constraint firstItem="BF5-iK-u4U" firstAttribute="top" secondItem="VFo-HP-2Gw" secondAttribute="bottom" constant="20" id="utN-oS-10q"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cqj-vl-EFo" appends="YES" id="UXG-Rw-yAD"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -524,6 +529,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yx-kD-pvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cqj-vl-EFo">
+                    <connections>
+                        <action selector="quitTelcado:" destination="lU1-hP-7C9" id="ef1-lL-gZc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2997.5999999999999" y="957.12143928035994"/>
         </scene>
@@ -637,7 +647,7 @@
                                     <constraint firstAttribute="width" constant="147" id="Br7-0M-08h"/>
                                     <constraint firstAttribute="height" constant="30" id="rar-UF-npr"/>
                                 </constraints>
-                                <state key="normal" title="Show answer">
+                                <state key="normal" title="Mostrar respuesta">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -673,7 +683,7 @@
                                     <constraint firstAttribute="width" constant="65" id="IWC-Et-NhI"/>
                                     <constraint firstAttribute="height" constant="30" id="OHN-P0-Qfd"/>
                                 </constraints>
-                                <state key="normal" title="Clean">
+                                <state key="normal" title="Limpiar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -687,7 +697,7 @@
                                     <constraint firstAttribute="height" constant="30" id="NkT-Oh-yjj"/>
                                     <constraint firstAttribute="width" constant="100" id="Nn4-GK-PYg"/>
                                 </constraints>
-                                <state key="normal" title="Incorrect">
+                                <state key="normal" title="Incorrecto">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
@@ -701,7 +711,7 @@
                                     <constraint firstAttribute="width" constant="100" id="1k5-WL-IDL"/>
                                     <constraint firstAttribute="height" constant="30" id="nvG-BW-X9D"/>
                                 </constraints>
-                                <state key="normal" title="Correct">
+                                <state key="normal" title="Correcto">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>

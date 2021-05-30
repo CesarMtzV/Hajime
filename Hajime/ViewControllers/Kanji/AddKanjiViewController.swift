@@ -56,6 +56,13 @@ class AddKanjiViewController: UIViewController {
         delegadoKanji.agregarKanji(kanji: KanjiUsuario(caracter: tfKanji.text!, pronunciacion: tfLecturas.text!, significado: tfSignificados.text!, ejemplo: tfEjemplos.text!))
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
+        guardarDatos()
+    }
+    
+    func guardarDatos() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "Kanji")
     }
     
     @IBAction func removeKeyboard(_ sender: Any) {

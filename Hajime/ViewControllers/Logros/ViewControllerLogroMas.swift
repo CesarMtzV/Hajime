@@ -12,6 +12,10 @@ class ViewControllerLogroMas: UIViewController {
     @IBOutlet weak var lbLogro: UILabel!
     @IBOutlet weak var lbDesc: UILabel!
     @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var lbCompleted: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
+    
+    let limit = Progress(totalUnitCount: 10)
     
     var LogrosMas : Logros!
 
@@ -23,9 +27,18 @@ class ViewControllerLogroMas: UIViewController {
         lbDesc.text = LogrosMas.detalle
         
         img.image = LogrosMas.img
+        
+        if LogrosMas.status == true {
+            limit.completedUnitCount += 10
+            let progreso = Float(limit.fractionCompleted)
+            progressView.setProgress(progreso, animated: true)
+            lbCompleted.text = "100 %"
+        }
 
         // Do any additional setup after loading the view.
     }
+    
+
     
 
     /*

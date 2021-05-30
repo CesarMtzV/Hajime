@@ -10,14 +10,14 @@ import UIKit
 class TableViewControllerLogros: UITableViewController {
     
     var ArrLogros = [
-        Logros(nombre: "Random", detalle: "You generated your first random kanji", img: UIImage(imageLiteralResourceName: "dice.png")),
-        Logros(nombre: "ひらがな", detalle: "You practiced Hiragana for the first time", img: UIImage(imageLiteralResourceName: "a.png")),
-        Logros(nombre: "カタカナ", detalle: "You practiced Katakana for the first time", img: UIImage(imageLiteralResourceName: "ka.png")),
-        Logros(nombre: "New alerts", detalle: "You turned notifications on", img: UIImage(imageLiteralResourceName: "noti.jpeg")),
-        Logros(nombre: "New record!", detalle: "You broke your record studying Hiragana", img: UIImage(imageLiteralResourceName: "hiragan.png")),
-        Logros(nombre: "感じ", detalle: "You created your first Kanji deck", img: UIImage(imageLiteralResourceName: "kanji-1.jpeg")),
-        Logros(nombre: "Artist", detalle: "You drew your first Kanji", img: UIImage(imageLiteralResourceName: "art.png")),
-        Logros(nombre: "New record!", detalle: "You broke your record studying Katakana", img: UIImage(imageLiteralResourceName: "katakana-1.png")),
+        Logros(nombre: "Random", detalle: "You generated your first random kanji", img: UIImage(imageLiteralResourceName: "dice.png"), status: false),
+        Logros(nombre: "ひらがな", detalle: "You practiced Hiragana for the first time", img: UIImage(imageLiteralResourceName: "a.png"), status: false),
+        Logros(nombre: "カタカナ", detalle: "You practiced Katakana for the first time", img: UIImage(imageLiteralResourceName: "ka.png"), status: false),
+        Logros(nombre: "New alerts", detalle: "You turned notifications on", img: UIImage(imageLiteralResourceName: "noti.jpeg"), status: false),
+        Logros(nombre: "New record!", detalle: "You broke your record studying Hiragana", img: UIImage(imageLiteralResourceName: "hiragan.png"), status: false),
+        Logros(nombre: "感じ", detalle: "You created your first Kanji deck", img: UIImage(imageLiteralResourceName: "kanji-1.jpeg"), status: false),
+        Logros(nombre: "Artist", detalle: "You drew your first Kanji", img: UIImage(imageLiteralResourceName: "art.png"), status: false),
+        Logros(nombre: "New record!", detalle: "You broke your record studying Katakana", img: UIImage(imageLiteralResourceName: "katakana-1.png"), status: false),
     ]
 
     override func viewDidLoad() {
@@ -29,7 +29,11 @@ class TableViewControllerLogros: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+
+        actualizarInterfaz()
+
         title = "Achievements"
+
     }    
     // MARK: - Table view data source
 
@@ -95,6 +99,36 @@ class TableViewControllerLogros: UITableViewController {
         let indice = tableView.indexPathForSelectedRow!
         
         vistaLogrosMas.LogrosMas = ArrLogros[indice.row]
+    }
+    
+    func actualizarInterfaz(){
+        let defaults = UserDefaults.standard
+        
+        //logro1
+        ArrLogros[0].status = defaults.bool(forKey: "Random")
+        
+        //logro2
+        ArrLogros[1].status = defaults.bool(forKey: "Hiragana")
+        
+        //logro3
+        ArrLogros[2].status = defaults.bool(forKey: "KatakanaG")
+        
+        //logro3
+        ArrLogros[3].status = defaults.bool(forKey: "NewAlerts")
+        
+        //logro3
+        ArrLogros[4].status = defaults.bool(forKey: "NewRecordH")
+        
+        //logro3
+        ArrLogros[5].status = defaults.bool(forKey: "Kanji")
+        
+        //logro3
+        ArrLogros[6].status = defaults.bool(forKey: "Artist")
+        
+        //logro3
+        ArrLogros[7].status = defaults.bool(forKey: "NewRecordK")
+        
+        
     }
     
 

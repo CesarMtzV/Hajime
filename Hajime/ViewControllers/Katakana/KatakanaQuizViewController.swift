@@ -48,16 +48,20 @@ class KatakanaQuizViewController: UIViewController {
             score += 1
             if score > highScore {
                 highScore = score
+                guardarDatosKatakanaRecord()
             }
         }
         else {
             if score > highScore {
                 highScore = score
+                guardarDatosKatakanaRecord()
             }
             score = 0
         }
         
         defaults.setValue(highScore, forKey: "katakana")
+        
+        guardarDatos()
         
         nextQuestion()
     }
@@ -92,6 +96,18 @@ class KatakanaQuizViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func guardarDatos() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "KatakanaG")
+    }
+    
+    func guardarDatosKatakanaRecord() {
+        let defaults = UserDefaults.standard
+        
+        defaults.setValue(true, forKey: "NewRecordK")
     }
     
     /*
