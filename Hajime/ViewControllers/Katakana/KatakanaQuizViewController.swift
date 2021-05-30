@@ -109,7 +109,9 @@ class KatakanaQuizViewController: UIViewController {
         
         defaults.setValue(true, forKey: "NewRecordK")
     }
-    
+    override var shouldAutorotate: Bool{
+        return false
+    }
     /*
     // MARK: - Navigation
 

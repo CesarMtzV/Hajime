@@ -155,7 +155,9 @@ class ShowMoreViewController: UIViewController {
         
         return validar
     }
-            
+    override var shouldAutorotate: Bool{
+        return false
+    }
     /*
     // MARK: - Navigation
 

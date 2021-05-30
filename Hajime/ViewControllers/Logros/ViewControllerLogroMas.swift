@@ -38,7 +38,9 @@ class ViewControllerLogroMas: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override var shouldAutorotate: Bool{
+        return false
+    }
     
 
     /*

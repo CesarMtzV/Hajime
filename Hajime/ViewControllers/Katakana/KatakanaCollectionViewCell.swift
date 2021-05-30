@@ -18,6 +18,4 @@ class KatakanaCollectionViewCell: UICollectionViewCell {
         lbKana.text = kana.symbol
         lbReading.text = kana.reading
     }
-    
-    
 }

@@ -17,5 +17,4 @@ class HiraganaCollectionViewCell: UICollectionViewCell {
         lbSymbol.text = kana.symbol
         lbReading.text = kana.reading
     }
-    
 }

@@ -21,7 +21,9 @@ class KatakanaGridViewController: UIViewController, UICollectionViewDelegate {
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
     
-
+    override var shouldAutorotate: Bool{
+        return false
+    }
 }
 
 extension KatakanaGridViewController: UICollectionViewDataSource {

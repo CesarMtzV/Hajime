@@ -36,7 +36,9 @@ class HiraganaViewController: UIViewController {
         title = "Hiragana"
         //navigationItem.setRightBarButton(settingsButton, animated: true)
     }
-    
+    override var shouldAutorotate: Bool{
+        return false
+    }
 
     /*
     // MARK: - Navigation

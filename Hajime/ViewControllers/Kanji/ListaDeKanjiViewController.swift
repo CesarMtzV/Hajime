@@ -99,6 +99,9 @@ extension ListaDeKanjiViewController: UITableViewDelegate, UITableViewDataSource
             tableView.endUpdates()
         }
     }
+    override var shouldAutorotate: Bool{
+        return false
+    }
 }
 
 //MARK: - Protocolo para agregar nuevo kanji
@@ -108,4 +111,5 @@ extension ListaDeKanjiViewController: protocoloAgregarKanji {
         setKanji.listaKanji.append(kanji)
         tableView.reloadData()
     }
+    
 }

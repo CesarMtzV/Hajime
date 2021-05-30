@@ -46,7 +46,9 @@ class KanjiDetallesViewController: UIViewController {
         
     }
     
-
+    override var shouldAutorotate: Bool{
+        return false
+    }
     /*
     // MARK: - Navigation
 

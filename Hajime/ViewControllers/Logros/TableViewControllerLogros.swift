@@ -130,6 +130,8 @@ class TableViewControllerLogros: UITableViewController {
         
         
     }
-    
+    override var shouldAutorotate: Bool{
+        return false
+    }
 
 }

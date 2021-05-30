@@ -154,5 +154,7 @@ extension KanjiViewController : protocoloAgregarSet {
         tvSets.reloadData()
     }
     
-    
+    override var shouldAutorotate: Bool{
+        return false
+    }
 }

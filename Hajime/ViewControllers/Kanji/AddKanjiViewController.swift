@@ -68,4 +68,7 @@ class AddKanjiViewController: UIViewController {
     @IBAction func removeKeyboard(_ sender: Any) {
         view.endEditing(true)
     }
+    override var shouldAutorotate: Bool{
+        return false
+    }
 }

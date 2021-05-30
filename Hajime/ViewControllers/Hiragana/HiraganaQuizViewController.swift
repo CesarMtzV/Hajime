@@ -109,7 +109,9 @@ class HiraganaQuizViewController: UIViewController {
         
         defaults.setValue(true, forKey: "NewRecordH")
     }
-    
+    override var shouldAutorotate: Bool{
+        return false
+    }
     /*
     // MARK: - Navigation
 

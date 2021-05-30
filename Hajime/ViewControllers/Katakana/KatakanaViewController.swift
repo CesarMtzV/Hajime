@@ -31,5 +31,7 @@ class KatakanaViewController: UIViewController {
     func configurarNavbar(){
         title = "Katakana"
     }
-
+    override var shouldAutorotate: Bool{
+        return false
+    }
 }

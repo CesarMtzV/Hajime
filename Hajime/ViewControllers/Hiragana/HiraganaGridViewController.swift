@@ -22,7 +22,9 @@ class HiraganaGridViewController: UIViewController {
         collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
-
+    override var shouldAutorotate: Bool{
+        return false
+    }
 }
 
 extension HiraganaGridViewController: UICollectionViewDataSource {
