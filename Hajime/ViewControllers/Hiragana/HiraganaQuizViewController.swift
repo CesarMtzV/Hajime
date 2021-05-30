@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HiraganaQuizViewController: UIViewController {
-
+    
     var defaults = UserDefaults.standard
     
     var currentSymbol: UInt32 = 0
@@ -44,19 +45,40 @@ class HiraganaQuizViewController: UIViewController {
     }
     
     @IBAction func answer(_ sender: UIButton) {
+        var audioPlayer: AVAudioPlayer?
         if sender.tag == Int(rightAnswer) {
+            let pathToSound = Bundle.main.path(forResource: "correct", ofType: "wav")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
             score += 1
             if score > highScore {
                 highScore = score
                 guardarDatosHiraganaRecord()
             }
+            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
+            }
         }
         else {
+            let pathToSound = Bundle.main.path(forResource: "wrong", ofType: "wav")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
             if score > highScore {
                 highScore = score
                 guardarDatosHiraganaRecord()
             }
             score = 0
+            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
+            }
         }
         
         defaults.setValue(highScore, forKey: "hiragana")

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8F45FD252650DCF20092E11F /* HiraganaQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45FD242650DCF20092E11F /* HiraganaQuizViewController.swift */; };
 		8F45FD282650EFCB0092E11F /* KatakanaQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45FD272650EFCB0092E11F /* KatakanaQuizViewController.swift */; };
+		8F91EF81266418E3005C9A39 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F91EF7F266418E3005C9A39 /* correct.wav */; };
+		8F91EF82266418E3005C9A39 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F91EF80266418E3005C9A39 /* wrong.wav */; };
 		93B550562651AEE000CAFB5D /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B550552651AEE000CAFB5D /* Config.storyboard */; };
 		93E6D1EC262DF88A003CC75D /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */; };
 		9D0B76652641FBF0006A43BC /* Logros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B76642641FBF0006A43BC /* Logros.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		8F45FD242650DCF20092E11F /* HiraganaQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaQuizViewController.swift; sourceTree = "<group>"; };
 		8F45FD272650EFCB0092E11F /* KatakanaQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaQuizViewController.swift; sourceTree = "<group>"; };
+		8F91EF7F266418E3005C9A39 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
+		8F91EF80266418E3005C9A39 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
 		93B550552651AEE000CAFB5D /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		93E6D1EB262DF88A003CC75D /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Hajime/ViewControllers/Settings/ConfigViewController.swift; sourceTree = SOURCE_ROOT; };
 		9D0B76642641FBF0006A43BC /* Logros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logros.swift; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F91EF7E266418E3005C9A39 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8F91EF7F266418E3005C9A39 /* correct.wav */,
+				8F91EF80266418E3005C9A39 /* wrong.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		9D2DC8DB263085E600F716AA /* Katakana */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 		9D2EF309260FD5A300E2F97A /* Hajime */ = {
 			isa = PBXGroup;
 			children = (
+				8F91EF7E266418E3005C9A39 /* Sounds */,
 				9DB91A5C262E310E00B574D8 /* ViewControllers */,
 				9D7433EC262B8B8E0038124A /* Storyboards */,
 				9D2EF30A260FD5A300E2F97A /* AppDelegate.swift */,
@@ -294,6 +308,8 @@
 				9D2EF317260FD5A400E2F97A /* LaunchScreen.storyboard in Resources */,
 				9D2EF314260FD5A400E2F97A /* Assets.xcassets in Resources */,
 				9D2EF312260FD5A300E2F97A /* Main.storyboard in Resources */,
+				8F91EF81266418E3005C9A39 /* correct.wav in Resources */,
+				8F91EF82266418E3005C9A39 /* wrong.wav in Resources */,
 				9D7433F1262B8D240038124A /* Hiragana.storyboard in Resources */,
 				93B550562651AEE000CAFB5D /* Config.storyboard in Resources */,
 				9D7433EE262B8BB50038124A /* Home.storyboard in Resources */,

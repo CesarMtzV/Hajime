@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/user189597/Documents/Mobile Development/Hajime/Hajime/Hajime/Sounds">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

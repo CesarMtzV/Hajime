@@ -30,8 +30,8 @@
             filePath = "Hajime/ViewControllers/Hiragana/HiraganaQuizViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "HiraganaQuizViewController"
             landmarkType = "3">
             <Locations>
@@ -138,8 +138,8 @@
             filePath = "Hajime/ViewControllers/Katakana/KatakanaQuizViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "KatakanaQuizViewController"
             landmarkType = "3">
          </BreakpointContent>
