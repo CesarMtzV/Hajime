@@ -15,7 +15,7 @@ class TableViewControllerLogros: UITableViewController {
         Logros(nombre: "カタカナ", detalle: "You practiced Katakana for the first time", img: UIImage(imageLiteralResourceName: "ka.png"), status: false),
         Logros(nombre: "New alerts", detalle: "You turned notifications on", img: UIImage(imageLiteralResourceName: "noti.jpeg"), status: false),
         Logros(nombre: "New record!", detalle: "You broke your record studying Hiragana", img: UIImage(imageLiteralResourceName: "hiragan.png"), status: false),
-        Logros(nombre: "感じ", detalle: "You created your first Kanji deck", img: UIImage(imageLiteralResourceName: "kanji-1.jpeg"), status: false),
+        Logros(nombre: "漢字", detalle: "You created your first Kanji deck", img: UIImage(imageLiteralResourceName: "kanji-1.jpeg"), status: false),
         Logros(nombre: "Artist", detalle: "You drew your first Kanji", img: UIImage(imageLiteralResourceName: "art.png"), status: false),
         Logros(nombre: "New record!", detalle: "You broke your record studying Katakana", img: UIImage(imageLiteralResourceName: "katakana-1.png"), status: false),
     ]
