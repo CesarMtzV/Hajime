@@ -231,6 +231,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnAgregar" destination="to3-4z-rCY" id="88L-Kr-XPQ"/>
+                        <outlet property="btnEstudiar" destination="e3G-4s-LLf" id="ppd-bH-XNQ"/>
                         <outlet property="tableView" destination="QEP-Cn-F2g" id="YfI-YI-f8C"/>
                     </connections>
                 </viewController>

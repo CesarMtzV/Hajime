@@ -16,6 +16,7 @@ class ListaDeKanjiViewController: UIViewController, protocoloAgregarkanji {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnAgregar: UIButton!
+    @IBOutlet weak var btnEstudiar: UIBarButtonItem!
     
     var setKanji : KanjiSet!
     
@@ -31,6 +32,10 @@ class ListaDeKanjiViewController: UIViewController, protocoloAgregarkanji {
     func configurarBotones(){
         btnAgregar.layer.cornerRadius = 0.5 * btnAgregar.bounds.size.width
         btnAgregar.clipsToBounds = true
+        
+        if setKanji.listaKanji.count == 0 {
+            btnEstudiar.isEnabled = false
+        }
     }
     
 
@@ -109,6 +114,7 @@ extension ListaDeKanjiViewController: UITableViewDelegate, UITableViewDataSource
 extension ListaDeKanjiViewController: protocoloAgregarKanji {
     func agregarKanji(kanji: KanjiUsuario) {
         setKanji.listaKanji.append(kanji)
+        btnEstudiar.isEnabled = true
         tableView.reloadData()
     }
     
