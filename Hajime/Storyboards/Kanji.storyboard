@@ -639,7 +639,7 @@
                                     <constraint firstAttribute="width" constant="147" id="Br7-0M-08h"/>
                                     <constraint firstAttribute="height" constant="30" id="rar-UF-npr"/>
                                 </constraints>
-                                <state key="normal" title="Mostrar respuesta">
+                                <state key="normal" title="Show answer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -675,7 +675,7 @@
                                     <constraint firstAttribute="width" constant="65" id="IWC-Et-NhI"/>
                                     <constraint firstAttribute="height" constant="30" id="OHN-P0-Qfd"/>
                                 </constraints>
-                                <state key="normal" title="Limpiar">
+                                <state key="normal" title="Clear">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -689,7 +689,7 @@
                                     <constraint firstAttribute="height" constant="30" id="NkT-Oh-yjj"/>
                                     <constraint firstAttribute="width" constant="100" id="Nn4-GK-PYg"/>
                                 </constraints>
-                                <state key="normal" title="Incorrecto">
+                                <state key="normal" title="Incorrect">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
@@ -703,7 +703,7 @@
                                     <constraint firstAttribute="width" constant="100" id="1k5-WL-IDL"/>
                                     <constraint firstAttribute="height" constant="30" id="nvG-BW-X9D"/>
                                 </constraints>
-                                <state key="normal" title="Correcto">
+                                <state key="normal" title="Correct">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
