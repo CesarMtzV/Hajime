@@ -185,9 +185,8 @@
                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hajime is distributed as is free of charge and its distribution and use for profit is prohibited " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-92-Tua">
-                                <rect key="frame" x="16" y="488" width="343" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hajime is distributed as is free of charge and its distribution and use for profit is prohibited " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-92-Tua">
+                                <rect key="frame" x="16" y="500" width="343" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -206,8 +205,11 @@
                             <constraint firstItem="cyb-bT-xSS" firstAttribute="top" secondItem="JTE-hx-WvN" secondAttribute="bottom" constant="10" id="6a4-1F-27A"/>
                             <constraint firstItem="nFN-s7-6tx" firstAttribute="trailing" secondItem="V8M-Z2-3LD" secondAttribute="trailing" constant="16" id="8oR-Du-geB"/>
                             <constraint firstItem="dg0-5c-yBU" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="9Ac-yd-tEY"/>
+                            <constraint firstItem="mqD-92-Tua" firstAttribute="top" secondItem="KCe-h2-uAL" secondAttribute="bottom" constant="20" id="Cz3-Lq-gSs"/>
                             <constraint firstItem="V8M-Z2-3LD" firstAttribute="top" secondItem="cyb-bT-xSS" secondAttribute="bottom" constant="20" id="N27-Rt-jLZ"/>
+                            <constraint firstItem="mqD-92-Tua" firstAttribute="leading" secondItem="nFN-s7-6tx" secondAttribute="leading" constant="16" id="Nhd-vd-FHh"/>
                             <constraint firstItem="cyb-bT-xSS" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="Nyv-FO-sfX"/>
+                            <constraint firstItem="nFN-s7-6tx" firstAttribute="trailing" secondItem="mqD-92-Tua" secondAttribute="trailing" constant="16" id="O4G-il-VjB"/>
                             <constraint firstItem="QPv-i4-T8u" firstAttribute="top" secondItem="dg0-5c-yBU" secondAttribute="bottom" constant="20" id="OK6-ix-xp4"/>
                             <constraint firstItem="dg0-5c-yBU" firstAttribute="top" secondItem="V8M-Z2-3LD" secondAttribute="bottom" constant="20" id="QyL-xh-xXg"/>
                             <constraint firstItem="JTE-hx-WvN" firstAttribute="top" secondItem="oF1-wL-aYK" secondAttribute="bottom" constant="10" id="S4q-hF-KCZ"/>
