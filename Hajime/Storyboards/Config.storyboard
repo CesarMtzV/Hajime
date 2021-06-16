@@ -145,15 +145,14 @@
                                 <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8M-Z2-3LD">
-                                <rect key="frame" x="16" y="185" width="343" height="84"/>
-                                <string key="text">Hajime is an application designed to be a helpful resource in learning Japanese characters. This app was made as the final project for the "Project of Mobile Development" class at ITESM, campus Monterrey.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hajime is an application designed to be a helpful resource in learning Japanese characters." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8M-Z2-3LD">
+                                <rect key="frame" x="16" y="185" width="343" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-5c-yBU">
-                                <rect key="frame" x="16" y="289" width="343" height="67"/>
+                                <rect key="frame" x="16" y="238.5" width="343" height="67"/>
                                 <string key="text">In this application you can study all the Hirgana and Katakana characters, as well as a vast pool of random kanji to discover that are fetched from kanjiapi.dev.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
@@ -167,7 +166,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPv-i4-T8u">
-                                <rect key="frame" x="16" y="376" width="343" height="50.5"/>
+                                <rect key="frame" x="16" y="325.5" width="343" height="50.5"/>
                                 <string key="text">You can also insert your own kanji that you're currently studying and use the study function to draw the characters that you uploaded.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,11 +178,27 @@
                                 <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCe-h2-uAL">
+                                <rect key="frame" x="16" y="396" width="343" height="84"/>
+                                <string key="text">Hajime has been developed by Tecnologico de Monterrey students during the February June semester of 2021, as part of the course Desarrollo de Aplicaciones para Dispositivos Móviles and advised by the teacher Yolanda Martínez Treviño.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hajime is distributed as is free of charge and its distribution and use for profit is prohibited " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-92-Tua">
+                                <rect key="frame" x="16" y="488" width="343" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nFN-s7-6tx"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="nFN-s7-6tx" firstAttribute="trailing" secondItem="KCe-h2-uAL" secondAttribute="trailing" constant="16" id="2vs-uX-zn7"/>
                             <constraint firstItem="nFN-s7-6tx" firstAttribute="trailing" secondItem="QPv-i4-T8u" secondAttribute="trailing" constant="16" id="31L-DB-u4g"/>
+                            <constraint firstItem="KCe-h2-uAL" firstAttribute="leading" secondItem="nFN-s7-6tx" secondAttribute="leading" constant="16" id="3ec-0M-y0w"/>
                             <constraint firstItem="QPv-i4-T8u" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="4H1-5v-kOp"/>
                             <constraint firstItem="oF1-wL-aYK" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="4iz-od-gLj"/>
                             <constraint firstItem="EHI-Qf-ph0" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="5e8-p9-5NP"/>
@@ -200,6 +215,7 @@
                             <constraint firstItem="V8M-Z2-3LD" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="aMw-ct-fhY"/>
                             <constraint firstItem="QPv-i4-T8u" firstAttribute="leading" secondItem="nFN-s7-6tx" secondAttribute="leading" constant="16" id="b1Q-iO-XbP"/>
                             <constraint firstItem="ytU-sK-JRZ" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="c4E-ft-Job"/>
+                            <constraint firstItem="KCe-h2-uAL" firstAttribute="top" secondItem="QPv-i4-T8u" secondAttribute="bottom" constant="20" id="ezE-UO-lLR"/>
                             <constraint firstItem="EHI-Qf-ph0" firstAttribute="top" secondItem="ytU-sK-JRZ" secondAttribute="bottom" constant="8" id="fek-YM-NQo"/>
                             <constraint firstItem="ytU-sK-JRZ" firstAttribute="top" secondItem="nFN-s7-6tx" secondAttribute="top" constant="42" id="kPe-X4-qFS"/>
                             <constraint firstItem="JTE-hx-WvN" firstAttribute="centerX" secondItem="rlW-jQ-zPi" secondAttribute="centerX" id="pby-Zb-UPr"/>
