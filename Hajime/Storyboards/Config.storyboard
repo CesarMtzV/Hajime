@@ -180,7 +180,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCe-h2-uAL">
                                 <rect key="frame" x="16" y="396" width="343" height="84"/>
-                                <string key="text">Hajime has been developed by Tecnologico de Monterrey students during the February June semester of 2021, as part of the course Desarrollo de Aplicaciones para Dispositivos Móviles and advised by the teacher Yolanda Martínez Treviño.</string>
+                                <string key="text">Hajime has been developed by Tecnológico de Monterrey students during the February June semester of 2021, as part of the course Desarrollo de Aplicaciones para Dispositivos Móviles and advised by the teacher Yolanda Martínez Treviño.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
